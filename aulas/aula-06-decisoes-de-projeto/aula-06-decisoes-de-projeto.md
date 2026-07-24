@@ -1,0 +1,18 @@
+# Aula 06 — Do problema à solução: decisões de projeto
+
+- **Unidade:** 2 — Projeto
+- **Nível de IA:** IA para consulta
+- **Evidência da aula:** 3 decisões que o caso exige
+- **Observação:** início da folha de consulta da unidade 2
+
+## Pontos a abordar
+- O que é uma decisão de projeto (vs. detalhe de implementação).
+- Trade-offs: nenhuma solução vem sem custo.
+- Restrições técnicas que forçam decisões.
+- Como requisitos e riscos da análise geram decisões.
+- Critérios para comparar alternativas de forma justa.
+
+## Trabalhos em sala (duplas/trios — escolher 1)
+1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
+2. Montar uma tabela de trade-offs (critérios × alternativas) para uma das decisões.
+3. Ligar cada decisão a um requisito ou risco da unidade de Análise que a justifica.

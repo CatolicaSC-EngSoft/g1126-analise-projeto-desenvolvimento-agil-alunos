@@ -1,0 +1,187 @@
+# Detalhamento das Aulas — Análise, Projeto e Desenvolvimento Ágil
+
+*Documento 3 de 3 — ver também "Premissas" e "Planejamento de Aulas".*
+
+Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~70 min) e 3 opções de trabalho em sala. Os trabalhos são feitos **em duplas ou trios**, escolhendo-se **uma** das três opções. Padrão das opções: a 1 é a produção direta do artefato; a 2 exige análise ou transformação; a 3 quase sempre envolve usar e criticar IA.
+
+---
+
+## Unidade 1 — Análise
+
+### Encontro 1 — Abertura + ágil e o papel da análise
+**Pontos a abordar**
+- Como funciona a disciplina: ciclos, avaliação, consulta autoconstruída e níveis de uso de IA.
+- Agilidade além das cerimônias: entrega incremental e decisão sob incerteza.
+- Diferença entre problema e requisito; por que começar pelo problema.
+- O que é "analisar": ler contexto, restrições e dados incompletos.
+- O que torna uma análise boa: foco em decisão, não em volume.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Reescrever um "pedido de cliente" mal formulado, separando o problema real da solução que já vinha embutida.
+2. A partir de um caso curto, listar 5 incertezas que precisam ser resolvidas antes de projetar qualquer solução.
+3. Identificar no caso três restrições (prazo, técnica, negócio) e explicar como cada uma limita as soluções possíveis.
+
+### Encontro 2 — Stakeholders, objetivos e conflitos
+**Pontos a abordar**
+- Quem é stakeholder e seus tipos (usuário, patrocinador, operação, regulador).
+- Objetivos de negócio × necessidades do usuário.
+- Onde as regras de negócio aparecem (e como ficam implícitas).
+- Conflitos de prioridade: como identificar e explicitar.
+- Como representar tudo num mapa de stakeholders.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Montar o mapa de stakeholders do caso, classificando cada um por interesse e influência.
+2. A partir de duas falas de stakeholders que se contradizem, escrever o conflito e propor um critério para decidir.
+3. Traduzir 3 regras de negócio implícitas do caso em enunciados explícitos e verificáveis.
+
+### Encontro 3 — Requisitos e histórias de usuário
+**Pontos a abordar**
+- Requisitos funcionais × não-funcionais.
+- Anatomia de uma história de usuário (Como… quero… para…).
+- INVEST: o que torna uma história boa.
+- Erros comuns: história que é tarefa, história gigante, história sem valor.
+- Uso de IA para gerar rascunhos — e o que sempre verificar depois.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.
+2. Pegar uma história "gigante" e quebrá-la em 3 menores, cada uma com valor independente.
+3. Gerar histórias com IA e corrigir/melhorar pelo menos 3, registrando o que mudou e por quê.
+
+### Encontro 4 — Critérios de aceite, hipóteses e riscos
+**Pontos a abordar**
+- Critérios de aceite verificáveis (Dado/Quando/Então).
+- Diferença entre critério de aceite e teste.
+- Hipótese × suposição; como formular um experimento simples.
+- Riscos: identificar, estimar probabilidade e impacto.
+- Como a análise se torna a base do projeto.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Escrever critérios de aceite (Dado/Quando/Então) para 3 histórias do caso.
+2. Transformar uma suposição do caso em hipótese testável e desenhar um experimento para validá-la.
+3. Levantar 2 riscos do caso e propor uma mitigação concreta para cada um.
+
+### Encontro 5 — Prova 1 + entrega/defesa do Trabalho 1
+Prova individual com consulta autoproduzida, sem IA. Entrega do documento de análise do grupo e verificação individual (perguntas dirigidas e/ou modificação ao vivo). *Sem trabalho de sala.*
+
+---
+
+## Unidade 2 — Projeto
+
+### Encontro 6 — Do problema à solução: decisões de projeto
+**Pontos a abordar**
+- O que é uma decisão de projeto (vs. detalhe de implementação).
+- Trade-offs: nenhuma solução vem sem custo.
+- Restrições técnicas que forçam decisões.
+- Como requisitos e riscos da análise geram decisões.
+- Critérios para comparar alternativas de forma justa.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
+2. Montar uma tabela de trade-offs (critérios × alternativas) para uma das decisões.
+3. Ligar cada decisão a um requisito ou risco da unidade de Análise que a justifica.
+
+### Encontro 7 — Modelagem e diagramas
+**Pontos a abordar**
+- Para que serve um diagrama: comunicar uma decisão, não decorar.
+- Diagrama de contexto, de componentes e de dados — quando usar cada um.
+- "O suficiente": evitar o diagrama que ninguém lê.
+- Modelar o fluxo principal do caso.
+- Gerar e revisar diagramas com IA.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Desenhar o diagrama de contexto do caso (o sistema e seus atores externos).
+2. Modelar os dados principais do caso (entidades e relações).
+3. Gerar um diagrama com IA e apontar 2 coisas que ele errou ou simplificou demais.
+
+### Encontro 8 — Decisões arquiteturais (ADR) e alternativas
+**Pontos a abordar**
+- Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
+- Por que registrar a decisão, e não só o resultado.
+- Consequências positivas e negativas de uma escolha.
+- Quando uma decisão merece virar ADR.
+- Revisitar decisões quando o contexto muda.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Escrever 1 ADR completo para uma decisão do caso.
+2. Completar um ADR mal escrito (só "decidimos X") com alternativas e consequências.
+3. Dada uma mudança de contexto (novo requisito/restrição), revisar um ADR existente e registrar o que muda.
+
+### Encontro 9 — Não-funcionais e validação do design
+**Pontos a abordar**
+- Requisitos não-funcionais: desempenho, segurança, manutenibilidade, escalabilidade.
+- Como os não-funcionais influenciam as decisões de projeto.
+- Critérios de validação: como saber se o design serve.
+- Riscos de projeto e pontos frágeis.
+- Como preparar o projeto para a construção.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
+2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir para a construção).
+3. Fazer a revisão crítica do projeto de outra dupla e apontar 2 fragilidades com justificativa.
+
+### Encontro 10 — Prova 2 + entrega/defesa do Trabalho 2
+Prova individual com consulta, sem IA. Entrega do documento de projeto e verificação individual. *Sem trabalho de sala.*
+
+---
+
+## Unidade 3 — Construção
+
+### Encontro 11 — Da decisão ao código: construção incremental
+**Pontos a abordar**
+- Fatiar o trabalho em incrementos que entregam valor.
+- Definição de pronto.
+- Versionamento e boas mensagens de commit.
+- Rastrear cada trecho de código até a decisão/história que o originou.
+- Usar IA para gerar código: o que sempre verificar.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Implementar o primeiro incremento de uma história e fazer o commit com mensagem clara.
+2. Definir a "definição de pronto" do grupo e aplicá-la ao incremento produzido.
+3. Gerar um trecho com IA e revisá-lo, registrando no commit o que foi mantido, o que mudou e por quê.
+
+### Encontro 12 — Testes a partir dos critérios de aceite
+**Pontos a abordar**
+- Do critério de aceite ao caso de teste.
+- Tipos de teste (unidade, integração) — o suficiente para o caso.
+- Teste como evidência objetiva de funcionamento.
+- Casos limite e caminhos de erro.
+- IA para gerar testes: cobertura real × aparente.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Escrever testes que cobrem os critérios de aceite de uma história.
+2. Acrescentar 2 casos limite ou de erro que o critério original não previa.
+3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.
+
+### Encontro 13 — Revisão de código e qualidade
+**Pontos a abordar**
+- Objetivo do code review: encontrar problemas, não julgar pessoas.
+- Cheiros de código mais comuns.
+- Riscos específicos de código gerado por IA (plausível, mas errado).
+- Uso de um checklist de revisão.
+- Como dar feedback objetivo e acionável.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Revisar um trecho preparado pelo professor e listar 3 problemas, cada um com justificativa.
+2. Revisar o código de outra dupla usando um checklist e devolver o feedback por escrito.
+3. Pegar um trecho gerado por IA e identificar onde ele está errado ou frágil.
+
+### Encontro 14 — Integração, validação e evidência de funcionamento
+**Pontos a abordar**
+- Integrar incrementos sem quebrar o que já funcionava.
+- Evidência de execução: o que mostrar para provar que funciona.
+- Demonstração curta e objetiva.
+- Validar o produto contra os critérios de aceite da análise.
+- Preparar a entrega e a defesa individual.
+
+**Trabalhos em sala (duplas/trios) — escolher 1**
+1. Integrar dois incrementos, rodar os testes e registrar o resultado.
+2. Preparar uma demo de 3 minutos que prova que uma história funciona.
+3. Confrontar o produto com os critérios de aceite da Unidade 1 e marcar o que atende e o que não atende.
+
+### Encontro 15 — Prova 3 + entrega/defesa do Trabalho 3
+Prova individual com consulta, sem IA. Entrega do produto funcionando (com evidências) e verificação individual dos integrantes. *Sem trabalho de sala.*
+
+---
+
+## Encontro 16 — Prova substitutiva + fechamento
+Prova substitutiva cumulativa (cobre as três unidades), sem IA, que substitui a menor das três notas de prova valendo o resultado obtido. Fechamento: retomada dos três momentos e retorno geral. *Sem trabalho de sala.*
