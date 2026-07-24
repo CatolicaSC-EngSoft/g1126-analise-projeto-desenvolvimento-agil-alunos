@@ -8,7 +8,7 @@
 - Questões de interpretação e decisão sobre análise: cenário, stakeholders, requisitos, critérios de aceite, riscos.
 
 ## Trabalho 1 (3,0) — entrega e defesa
-- Entrega do documento de análise do grupo (consolidação das aulas 1–4).
+- Entrega da **iteração 1 do produto vivo**: documento de análise + walking skeleton rodando (CI verde), consolidando as aulas 1–4.
 - Verificação individual: perguntas dirigidas e/ou modificação ao vivo.
 
 _Sem trabalho de sala._

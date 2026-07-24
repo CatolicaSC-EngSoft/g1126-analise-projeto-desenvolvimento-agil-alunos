@@ -3,13 +3,17 @@
 - **Unidade:** 1 — Análise
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** 5 histórias de usuário do caso
+- **Observação:** escolha da história zero (fatia vertical do walking skeleton)
 
 ## Pontos a abordar
 - Requisitos funcionais × não-funcionais.
 - Anatomia de uma história de usuário (Como… quero… para…).
 - INVEST: o que torna uma história boa.
 - Erros comuns: história que é tarefa, história gigante, história sem valor.
-- Uso de IA para gerar rascunhos — e o que sempre verificar depois.
+- O que é uma "fatia vertical": a história que atravessa todas as camadas.
+
+## Produção contínua (todos os grupos)
+- Escolher a história zero do caso: a fatia fina que virará o walking skeleton na próxima aula.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.

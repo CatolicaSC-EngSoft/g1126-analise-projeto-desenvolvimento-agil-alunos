@@ -1,16 +1,20 @@
-# Aula 04 — Critérios de aceite, hipóteses e riscos
+# Aula 04 — Critérios de aceite, hipóteses e riscos · walking skeleton + Retrospectiva 1
 
 - **Unidade:** 1 — Análise
-- **Nível de IA:** IA para consulta
+- **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** critérios de aceite para 3 histórias + 2 riscos + 1 hipótese/experimento
-- **Observação:** fechar a folha de consulta da unidade 1; consolidar o documento de análise do grupo
+- **Observação:** publicar o walking skeleton; Retrospectiva 1; fechar a consulta da unidade 1 e consolidar o documento de análise
 
 ## Pontos a abordar
 - Critérios de aceite verificáveis (Dado/Quando/Então).
 - Diferença entre critério de aceite e teste.
 - Hipótese × suposição; como formular um experimento simples.
 - Riscos: identificar, estimar probabilidade e impacto.
-- Como a análise se torna a base do projeto.
+- Por que um esqueleto que roda desde cedo reduz risco.
+
+## Produção contínua (todos os grupos)
+- Implementar e publicar o walking skeleton (história zero ponta a ponta) com CI verde.
+- Retrospectiva 1 (meia página) + autoavaliação de contribuição por pares.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Escrever critérios de aceite (Dado/Quando/Então) para 3 histórias do caso.

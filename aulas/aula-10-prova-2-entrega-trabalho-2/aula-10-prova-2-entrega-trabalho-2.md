@@ -8,7 +8,7 @@
 - Questões de interpretação e decisão sobre projeto: decisões, trade-offs, diagramas, ADR, não-funcionais.
 
 ## Trabalho 2 (3,0) — entrega e defesa
-- Entrega do documento de projeto do grupo (consolidação das aulas 6–9).
+- Entrega da **iteração 2 do produto vivo**: documento de projeto + incremento integrado via PR revisado (CI verde), consolidando as aulas 6–9.
 - Verificação individual: perguntas dirigidas e/ou modificação ao vivo.
 
 _Sem trabalho de sala._

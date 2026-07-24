@@ -1,9 +1,9 @@
-# Aula 14 — Integração, validação e evidência de funcionamento
+# Aula 14 — Integração, validação e evidência de funcionamento · Retrospectiva 3
 
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** demo curta do incremento
-- **Observação:** fechar a folha de consulta da unidade 3; consolidar o produto + evidências
+- **Observação:** consolidar o produto + evidências; Retrospectiva 3; fechar a consulta da unidade 3
 
 ## Pontos a abordar
 - Integrar incrementos sem quebrar o que já funcionava.
@@ -11,6 +11,10 @@
 - Demonstração curta e objetiva.
 - Validar o produto contra os critérios de aceite da análise.
 - Preparar a entrega e a defesa individual.
+
+## Produção contínua (todos os grupos)
+- Consolidar o produto + evidências; garantir CI verde.
+- Retrospectiva 3 (meia página) + autoavaliação por pares.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Integrar dois incrementos, rodar os testes e registrar o resultado.

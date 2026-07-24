@@ -1,16 +1,19 @@
-# Aula 06 — Do problema à solução: decisões de projeto
+# Aula 06 — Do problema à solução: decisões de projeto · fluxo de Pull Request
 
 - **Unidade:** 2 — Projeto
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** 3 decisões que o caso exige
-- **Observação:** início da folha de consulta da unidade 2
+- **Observação:** início da folha de consulta da unidade 2; passar a integrar mudanças por PR revisado
 
 ## Pontos a abordar
 - O que é uma decisão de projeto (vs. detalhe de implementação).
 - Trade-offs: nenhuma solução vem sem custo.
 - Restrições técnicas que forçam decisões.
 - Como requisitos e riscos da análise geram decisões.
-- Critérios para comparar alternativas de forma justa.
+- Fluxo de Pull Request: branch, revisão por par, merge com CI verde.
+
+## Produção contínua (todos os grupos)
+- Passar a integrar toda mudança relevante do produto por PR revisado por outro integrante.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
