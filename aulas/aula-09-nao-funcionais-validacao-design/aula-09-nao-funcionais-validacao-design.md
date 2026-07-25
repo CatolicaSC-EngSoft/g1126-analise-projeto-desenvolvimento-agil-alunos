@@ -4,6 +4,7 @@
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** checklist de validação do projeto
 - **Observação:** evoluir o produto via PR; Retrospectiva 2; fechar a consulta da unidade 2 e consolidar o documento de projeto
+- **Material:** `slides/aula-09-nao-funcionais-validacao-design.pptx`
 
 ## Pontos a abordar
 - Requisitos não-funcionais: desempenho, segurança, manutenibilidade, escalabilidade.
@@ -16,7 +17,7 @@
 - Evoluir o produto com novas histórias, integradas por PR revisado e CI verde.
 - Retrospectiva 2 (meia página) + autoavaliação por pares.
 
-## Trabalhos em sala (duplas/trios — escolher 1)
+## Trabalhos em sala (em grupo — escolher 1)
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
 2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir para a construção).
 3. Fazer a revisão crítica do projeto de outro grupo e apontar 2 fragilidades com justificativa.

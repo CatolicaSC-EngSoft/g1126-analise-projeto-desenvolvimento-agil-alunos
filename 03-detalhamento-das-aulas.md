@@ -2,7 +2,7 @@
 
 *Documento 3 de 3 — ver também "Premissas" e "Planejamento de Aulas".*
 
-Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~70 min), a **produção contínua** do produto vivo (feita por todos os grupos, evoluindo o mesmo repositório) e 3 opções de trabalho em sala. Os trabalhos de sala são feitos **em duplas ou trios**, escolhendo-se **uma** das três opções. Padrão das opções: a 1 é a produção direta do artefato; a 2 exige análise ou transformação; a 3 quase sempre envolve usar e criticar IA.
+Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~70 min), a **produção contínua** do produto vivo (feita por todos os grupos, evoluindo o mesmo repositório) e 3 opções de trabalho em sala. Os trabalhos de sala são feitos **no grupo do projeto (3 a 5 pessoas)**, escolhendo-se **uma** das três opções. Padrão das opções: a 1 é a produção direta do artefato; a 2 exige análise ou transformação; a 3 quase sempre envolve usar e criticar IA.
 
 **Produto vivo:** o software roda desde a Unidade 1 (walking skeleton) e evolui a cada iteração. As aulas 4, 9 e 14 (antes das provas) incluem **retrospectiva** com autoavaliação de contribuição por pares.
 
@@ -22,7 +22,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 - Formar o grupo (3 a 5 pessoas) e receber o caso.
 - Criar o repositório público do grupo a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o **fluxo de Pull Request**. O banco é SQLite, embutido no Node: rodar `npm run db:migrar` e pronto, nada a instalar.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Reescrever um "pedido de cliente" mal formulado, separando o problema real da solução que já vinha embutida.
 2. A partir de um caso curto, listar 5 incertezas que precisam ser resolvidas antes de projetar qualquer solução.
 3. Identificar no caso três restrições (prazo, técnica, negócio) e explicar como cada uma limita as soluções possíveis.
@@ -35,7 +35,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 - Conflitos de prioridade: como identificar e explicitar.
 - Como representar tudo num mapa de stakeholders.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Montar o mapa de stakeholders do caso, classificando cada um por interesse e influência.
 2. A partir de duas falas de stakeholders que se contradizem, escrever o conflito e propor um critério para decidir.
 3. Traduzir 3 regras de negócio implícitas do caso em enunciados explícitos e verificáveis.
@@ -52,7 +52,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 - Escolher a **história zero** do caso: a fatia fina que virará o walking skeleton na próxima aula.
 - Rodar `npm run db:migrar` — o banco da Unidade 1 é SQLite, embutido no Node: nada a instalar.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.
 2. Pegar uma história "gigante" e quebrá-la em 3 menores, cada uma com valor independente.
 3. Gerar histórias com IA e corrigir/melhorar pelo menos 3, registrando o que mudou e por quê.
@@ -70,7 +70,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 - **Retrospectiva 1** (meia página) + autoavaliação de contribuição por pares.
 - Fechar a consulta da unidade 1; consolidar o documento de análise.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Escrever critérios de aceite (Dado/Quando/Então) para 3 histórias do caso.
 2. Transformar uma suposição do caso em hipótese testável e desenhar um experimento para validá-la.
 3. Levantar 2 riscos do caso e propor uma mitigação concreta para cada um.
@@ -93,7 +93,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 **Produção contínua (todos os grupos)**
 - Passar a integrar toda mudança relevante do produto por **PR revisado** por outro integrante.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
 2. Montar uma tabela de trade-offs (critérios × alternativas) para uma das decisões.
 3. Ligar cada decisão a um requisito ou risco da unidade de Análise que a justifica.
@@ -106,7 +106,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 - Modelar o fluxo principal do caso.
 - Gerar e revisar diagramas com IA.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Desenhar o diagrama de contexto do caso (o sistema e seus atores externos).
 2. Modelar os dados principais do caso (entidades e relações).
 3. Gerar um diagrama com IA e apontar 2 coisas que ele errou ou simplificou demais.
@@ -123,7 +123,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 **Produção contínua (todos os grupos)**
 - Escrever o **ADR da migração de SQLite para PostgreSQL** — entregável do Trabalho 2, executado na Unidade 3.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Escrever 1 ADR completo para uma decisão do caso.
 2. Completar um ADR mal escrito (só "decidimos X") com alternativas e consequências.
 3. Dada uma mudança de contexto (novo requisito/restrição), revisar um ADR existente e registrar o que muda.
@@ -141,7 +141,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 - **Retrospectiva 2** (meia página) + autoavaliação por pares.
 - Fechar a consulta da unidade 2; consolidar o documento de projeto.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
 2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir).
 3. Fazer a revisão crítica do projeto de outro grupo e apontar 2 fragilidades com justificativa.
@@ -165,7 +165,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Evoluir o produto com uma nova história priorizada, via PR revisado e CI verde.
 - Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Implementar o primeiro incremento de uma história e abrir o PR com mensagem clara.
 2. Definir a "definição de pronto" do grupo e aplicá-la ao incremento produzido.
 3. Gerar um trecho com IA e revisá-lo, registrando no PR o que foi mantido, o que mudou e por quê.
@@ -179,7 +179,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Casos limite e caminhos de erro.
 - IA para gerar testes: cobertura real × aparente.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Escrever testes que cobrem os critérios de aceite de uma história.
 2. Acrescentar 2 casos limite ou de erro que o critério original não previa.
 3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.
@@ -198,7 +198,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - **Executar a migração de SQLite para PostgreSQL** decidida no ADR da Unidade 2, com os testes provando que o comportamento se manteve.
 - Aplicar pelo menos 1 outra refatoração na base do produto, também protegida por testes.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Migrar a camada de dados para PostgreSQL mantendo os testes verdes antes e depois — sem tocar em `doacoes.js`.
 2. Revisar o código de outro grupo usando um checklist e devolver o feedback por escrito.
 3. Pegar um trecho gerado por IA, identificar onde ele é frágil e refatorá-lo.
@@ -216,7 +216,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - **Retrospectiva 3** (meia página) + autoavaliação por pares.
 - Fechar a consulta da unidade 3.
 
-**Trabalhos em sala (duplas/trios — escolher 1)**
+**Trabalhos em sala (em grupo — escolher 1)**
 1. Integrar dois incrementos, rodar os testes e registrar o resultado.
 2. Preparar uma demo de 3 minutos que prova que uma história funciona.
 3. Confrontar o produto com os critérios de aceite da Unidade 1 e marcar o que atende e o que não atende.

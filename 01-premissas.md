@@ -18,7 +18,7 @@ A disciplina é orientada ao desenvolvimento da capacidade de analisar problemas
 
 **6. Avaliação exige interpretação e decisão, alternando com e sem IA.** As questões pedem analisar cenário, comparar alternativas, corrigir, priorizar, propor experimentos, justificar e adaptar após mudança — nunca reproduzir definição. Provas sem IA testam fundamento; atividades com IA testam julgamento e verificação, cada modo com sua própria rubrica estável.
 
-**7. A participação individual é sempre verificável — e a verificação escala.** Trabalho em grupo não basta como evidência individual. Verifica-se por perguntas dirigidas, defesa oral, modificação ao vivo, histórico de commits e explicação de decisões, por amostragem e em janelas curtas durante a aula. A composição entre nota do grupo e nota individual é declarada na atividade.
+**7. A participação individual é sempre verificável — e a verificação escala.** Trabalho em grupo não basta como evidência individual. Verifica-se por perguntas dirigidas, defesa oral, modificação ao vivo, histórico de commits e explicação de decisões. A verificação é **individual e de todos**, em janelas curtas de 2 a 3 minutos, escalonadas ao longo do encontro — não por amostragem. A composição entre nota do grupo e nota individual é declarada na atividade.
 
 **8. Toda aula gera uma evidência, corrigida por critérios simples e estáveis.** Cada encontro produz uma pequena entrega, com poucos modelos reaproveitados. A correção é por checklist — prazo, formato, requisitos mínimos, coerência, participação — apoiada em exemplares-âncora (o que distingue uma justificativa forte de uma fraca), para que o checklist meça raciocínio e não só conformidade. O feedback chega próximo da execução.
 

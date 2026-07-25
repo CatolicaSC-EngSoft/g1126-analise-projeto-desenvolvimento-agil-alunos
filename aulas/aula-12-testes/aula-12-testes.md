@@ -4,6 +4,7 @@
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** conjunto de testes de uma história
 - **Observação:** o professor introduz uma mudança de contexto durante a aula — o produto e as decisões do grupo precisarão responder a ela.
+- **Material:** `slides/aula-12-testes.pptx`
 
 ## Pontos a abordar
 - Do critério de aceite ao caso de teste.
@@ -12,7 +13,7 @@
 - Casos limite e caminhos de erro.
 - IA para gerar testes: cobertura real × aparente.
 
-## Trabalhos em sala (duplas/trios — escolher 1)
+## Trabalhos em sala (em grupo — escolher 1)
 1. Escrever testes que cobrem os critérios de aceite de uma história.
 2. Acrescentar 2 casos limite ou de erro que o critério original não previa.
 3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.

@@ -17,7 +17,7 @@
 - Escolher a história zero do caso: a fatia fina que virará o walking skeleton na próxima aula.
 - Rodar `npm run db:migrar` — o banco da Unidade 1 é SQLite, embutido no Node: nada a instalar.
 
-## Trabalhos em sala (duplas/trios — escolher 1)
+## Trabalhos em sala (em grupo — escolher 1)
 1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.
 2. Pegar uma história "gigante" e quebrá-la em 3 menores, cada uma com valor independente.
 3. Gerar histórias com IA e corrigir/melhorar pelo menos 3, registrando o que mudou e por quê.

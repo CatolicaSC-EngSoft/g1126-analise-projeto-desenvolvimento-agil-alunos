@@ -2,7 +2,15 @@
 
 *Documento 2 de 3 — ver também "Premissas" e "Detalhamento das Aulas".*
 
-## 1. Estrutura de avaliação
+## 1. Quem são os alunos
+
+Turma de **6ª fase de Engenharia de Software**, com **Desenvolvimento, Testes, Programação server-side e Banco de Dados já cursados**. Isso define o que a disciplina **não** faz: não ensina a programar, não ensina o que é um teste automatizado, não ensina SQL nem versionamento básico.
+
+O que ela agrega sobre essa base: **analisar o problema antes de codificar, decidir com informação incompleta, justificar a escolha, verificar o resultado e adaptar quando o contexto muda**. A stack (Node, Express, Vitest, SQLite, PostgreSQL) é território conhecido — usada como meio, não como conteúdo. É por isso que o `template-repo` entrega a infraestrutura pronta: o tempo de aula não deve ser gasto em configuração, e sim em decisão.
+
+Consequência prática para a condução: quando um bloco de conteúdo parecer básico para a turma, encurte a exposição e alongue a produção. O risco nesta turma não é a dificuldade técnica — é a pressa de codificar antes de entender o problema.
+
+## 2. Estrutura de avaliação
 
 Três ciclos/unidades, cada uma com a mesma estrutura (total 10 pontos por unidade):
 
@@ -14,7 +22,7 @@ Três ciclos/unidades, cada uma com a mesma estrutura (total 10 pontos por unida
 
 A estrutura é **sequencial e de aprofundamento** — análise → projeto → construção —, mas não é um waterfall: o software roda desde a Unidade 1 e evolui em iterações (ver seção 2).
 
-## 2. Produto vivo e iterações (walking skeleton)
+## 3. Produto vivo e iterações (walking skeleton)
 
 Cada grupo constrói **um único produto** para o seu caso, entregue em três iterações:
 
@@ -35,7 +43,7 @@ Planos B para quem não conseguir usar Docker: **GitHub Codespaces** (roda tudo 
 
 **Infraestrutura mínima (montada na Unidade 1):** repositório Git por grupo, pipeline de **CI com GitHub Actions** (build + testes a cada push) e **fluxo de Pull Request** para integrar mudanças. A partir da Unidade 2, toda alteração relevante entra por PR revisado por outro integrante.
 
-## 3. Formato da aula (faixa, 19h00–22h30)
+## 4. Formato da aula (faixa, 19h00–22h30)
 
 Rotina previsível a cada encontro de conteúdo:
 
@@ -47,7 +55,7 @@ Rotina previsível a cada encontro de conteúdo:
 
 Com ~3h30 de aula, os 70 min de exposição deixam mais de 2 horas para produção em sala, mantendo a aula como principal ambiente de aprendizagem.
 
-## 4. Consulta autoconstruída (mecanismo central)
+## 5. Consulta autoconstruída (mecanismo central)
 
 A consulta usada na prova é **construída pelo próprio aluno durante as aulas**, não fornecida pronta.
 
@@ -61,15 +69,15 @@ A consulta usada na prova é **construída pelo próprio aluno durante as aulas*
 
 Como a consulta não tem limite de páginas, as provas são **necessariamente de aplicação**: nenhuma questão deve ser respondível por localização de definição (premissa 6).
 
-## 5. Provas com consulta (6,0 por unidade)
+## 6. Provas com consulta (6,0 por unidade)
 
 Uma prova por unidade, **individual**, com consulta autoproduzida e **sem IA** — checkpoint de fundamento. Questões de interpretação e decisão, nunca reprodução de definição.
 
 **Formato:** 6 questões — 3 de múltipla escolha (com justificativa obrigatória de uma linha) e 3 abertas, sendo a última discursiva. A prova é pontuada em **10,0** (cinco questões de 1,6 + a discursiva de 2,0) e **convertida para os 6,0 da unidade** (nota × 0,6). Cada prova tem **3 versões** e **2 ordens de questões** por versão, totalizando 6 cadernos.
 
-## 6. Trabalho maior (3,0 por unidade)
+## 7. Trabalho maior (3,0 por unidade)
 
-**Em grupo (3 a 5 pessoas)**, prático e verificável, **entregue no dia da prova** da unidade.
+**Em grupo (3 a 5 pessoas)** — o mesmo grupo dos trabalhos de sala —, prático e verificável, **entregue no dia da prova** da unidade.
 
 **Canal de entrega:** o **Teams é o canal oficial** — é a data e hora dele que valem. Junto, o grupo cria no GitHub um **branch congelando o estado entregue** (`entrega-1`, `entrega-2`, `entrega-3`) e informa o nome na entrega do Teams. A `main` segue evoluindo; a correção olha o branch. Commits posteriores ao prazo nesse branch não contam. Cada trabalho é uma **iteração do produto vivo** (ver seção 2), consolidando as atividades da unidade.
 
@@ -96,13 +104,13 @@ Uma prova por unidade, **individual**, com consulta autoproduzida e **sem IA** �
 
 Detalhes por trabalho em `trabalhos/`.
 
-## 7. Retrospectivas
+## 8. Retrospectivas
 
 O encontro que **antecede cada prova** (aulas 4, 9 e 14) inclui uma **retrospectiva** curta da iteração: o que decidimos, o que funcionou, o que mudaríamos, próximos passos.
 
 A retrospectiva inclui uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos entre os integrantes). Ela é usada como **sinal, não como cálculo**: em grupos pequenos a distribuição tende à reciprocidade ("20/20/20/20/20"), então entrar na fórmula premiaria o combinado. Quando um grupo destoa desse padrão, é ali que o professor direciona as perguntas da defesa individual.
 
-## 8. Atividades de aula (1,0 por unidade)
+## 9. Atividades de aula (1,0 por unidade)
 
 Pequena entrega ou demonstração a cada encontro de conteúdo, com **correção objetiva** e binária: entregou no prazo e no formato, pontuou; não entregou, não pontuou.
 
@@ -110,7 +118,7 @@ Cada unidade tem 4 encontros de conteúdo, então **cada atividade vale 0,25**. 
 
 Na Aula 1 há uma entrega específica, sem nota: a atividade **"Aceite do contrato pedagógico"** (ver `contrato-pedagogico.md`), em que cada aluno aceita o contrato e informa os **membros do time** e o **link do repositório público no GitHub**. Prazo: até o fim da Aula 2.
 
-## 9. Nota final
+## 10. Nota final
 
 A nota final é a **média simples das três notas de unidade** (cada uma de 0 a 10):
 
@@ -118,7 +126,7 @@ A nota final é a **média simples das três notas de unidade** (cada uma de 0 a
 
 Cada unidade compõe seus 10 pontos com prova (6,0), trabalho (3,0) e atividades (1,0). A substitutiva altera **apenas a nota da prova mais baixa**, e a unidade correspondente é recalculada antes da média.
 
-## 10. Prova substitutiva
+## 11. Prova substitutiva
 
 Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); **sem IA**, com as consultas manuscritas das três unidades; substitui a **nota de prova mais baixa**, valendo o resultado obtido; substitui **somente nota de prova**.
 
@@ -131,13 +139,13 @@ Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); *
 | Falta à Prova 3 com atestado | Faz a Prova 3 na Aula 16, no lugar da substitutiva |
 | Falta à substitutiva | **Sem reposição** — não há segunda chamada |
 
-## 11. Níveis de IA (referência de partida)
+## 12. Níveis de IA (referência de partida)
 
 - **Provas:** Sem IA.
 - **Atividades de aula:** conforme o objetivo do encontro, declarado caso a caso.
 - **Trabalho maior:** IA como colaboradora permitida, com o aluno responsável por verificar, testar, corrigir e defender.
 
-## 12. Calendário — 21 quintas: 16 encontros, 3 noites de trabalho e 2 reservas
+## 13. Calendário — 21 quintas: 16 encontros, 3 noites de trabalho e 2 reservas
 
 Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. O semestre tem **21 quintas**: os 16 encontros, 3 noites de trabalho remoto e **2 datas de reserva** (10/12 e 17/12) para reposição, plantão ou atividade complementar. Além dos 16 encontros, há **3 noites de trabalho remoto** (27/08, 08/10 e 19/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
 

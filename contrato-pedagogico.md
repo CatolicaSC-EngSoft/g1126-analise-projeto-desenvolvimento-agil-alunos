@@ -131,7 +131,7 @@ Não uso detectores de IA. Verifico aprendizagem por outros meios: produção ac
 
 ## 7. Trabalho em grupo
 
-Grupos de **3 a 5 pessoas**, formados na Aula 1 e mantidos ao longo do semestre. Um **repositório público no GitHub** por grupo, com:
+Grupos de **3 a 5 pessoas**, formados na Aula 1 e mantidos ao longo do semestre. **O grupo é a unidade de todo trabalho da disciplina** — tanto dos três trabalhos maiores quanto dos trabalhos feitos em sala a cada encontro. Um **repositório público no GitHub** por grupo, com:
 
 - **CI (GitHub Actions)** rodando build e testes a cada push — e verde em toda entrega;
 - **Pull Request revisado** por outro integrante para toda mudança relevante, a partir da Unidade 2;
