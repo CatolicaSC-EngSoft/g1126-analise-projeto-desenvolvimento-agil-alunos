@@ -40,7 +40,7 @@ A disciplina se alinha diretamente com o objetivo geral do curso ao preparar o a
 - **Conteúdos:** análise de problemas e levantamento de requisitos em uma abordagem ágil com foco em impacto (*outcome* vs *output*).
 - **Objetivo de aprendizagem:** possibilitar ao aluno analisar problemas aplicando o levantamento de requisitos em uma abordagem ágil com foco em impacto.
 - **Metodologia:** aula expositiva e práticas.
-- **Avaliação:** prova.
+- **Avaliação:** prova com consulta (6,0) + trabalho maior em grupo (3,0) + atividades de aula (1,0).
 - **Cronograma (carga):** 35.
 - **Recursos:** laboratório.
 
@@ -48,7 +48,7 @@ A disciplina se alinha diretamente com o objetivo geral do curso ao preparar o a
 - **Conteúdos:** projeto de solução orientado a experimentos e gestão de backlog (*upstream*).
 - **Objetivo de aprendizagem:** instrumentalizar o aluno para que possa projetar soluções orientadas a experimentos e à gestão de backlog.
 - **Metodologia:** aula expositiva e práticas.
-- **Avaliação:** prova.
+- **Avaliação:** prova com consulta (6,0) + trabalho maior em grupo (3,0) + atividades de aula (1,0).
 - **Cronograma (carga):** 35.
 - **Recursos:** laboratório.
 
@@ -56,9 +56,13 @@ A disciplina se alinha diretamente com o objetivo geral do curso ao preparar o a
 - **Conteúdos:** desenvolvimento de software ágil (*downstream*).
 - **Objetivo de aprendizagem:** apresentar ao aluno técnicas para o desenvolvimento de software ágil.
 - **Metodologia:** aula expositiva e práticas.
-- **Avaliação:** prova.
+- **Avaliação:** prova com consulta (6,0) + trabalho maior em grupo (3,0) + atividades de aula (1,0).
 - **Cronograma (carga):** 30.
 - **Recursos:** laboratório.
+
+## Modelo de avaliação
+
+Cada unidade vale 10 pontos: **prova com consulta (6,0)**, individual e sem IA, com consulta autoconstruída em aula; **trabalho maior (3,0)**, em grupo de 3 a 5 pessoas, prático e verificável, entregue como uma iteração do produto vivo no dia da prova; e **atividades de aula (1,0)**, de correção objetiva. Ao final há uma **prova substitutiva** cumulativa, sem IA, que substitui a menor das três notas de prova.
 
 ## Bibliografia básica
 

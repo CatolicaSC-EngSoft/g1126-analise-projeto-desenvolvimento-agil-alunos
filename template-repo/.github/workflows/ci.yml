@@ -1,0 +1,31 @@
+name: CI
+
+# Roda a cada push e a cada Pull Request.
+# O PR só deve ser integrado com este check verde.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-e-testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rodar os testes
+        run: npm test
+
+      - name: Verificar se a aplicação sobe
+        run: |
+          npm start &
+          sleep 3
+          curl --fail http://localhost:3000/api/saude

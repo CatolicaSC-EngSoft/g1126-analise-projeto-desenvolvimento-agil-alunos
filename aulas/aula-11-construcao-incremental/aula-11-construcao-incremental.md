@@ -3,7 +3,7 @@
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** novo incremento integrado por PR
-- **Observação:** início da folha de consulta da unidade 3
+- **Observação:** início da consulta da unidade 3
 
 ## Pontos a abordar
 - Fatiar o trabalho em incrementos que entregam valor.

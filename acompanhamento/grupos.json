@@ -1,0 +1,47 @@
+{
+  "iteracaoAtual": 1,
+  "iteracoes": {
+    "1": {
+      "de": "2026-07-30T00:00:00Z",
+      "ate": "2026-09-03T23:59:59Z"
+    },
+    "2": {
+      "de": "2026-09-04T00:00:00Z",
+      "ate": "2026-10-15T23:59:59Z"
+    },
+    "3": {
+      "de": "2026-10-16T00:00:00Z",
+      "ate": "2026-11-26T23:59:59Z"
+    }
+  },
+  "grupos": [
+    {
+      "nome": "Grupo 1",
+      "repo": "https://github.com/ORG/repo-do-grupo-1",
+      "integrantes": [
+        {
+          "nome": "Nome do aluno",
+          "github": "usuario-github"
+        },
+        {
+          "nome": "Nome do aluno",
+          "github": "usuario-github"
+        },
+        {
+          "nome": "Nome do aluno",
+          "github": "usuario-github"
+        }
+      ]
+    },
+    {
+      "nome": "Grupo 2",
+      "repo": "https://github.com/ORG/repo-do-grupo-2",
+      "integrantes": [
+        {
+          "nome": "Nome do aluno",
+          "github": "usuario-github"
+        }
+      ]
+    }
+  ]
+}

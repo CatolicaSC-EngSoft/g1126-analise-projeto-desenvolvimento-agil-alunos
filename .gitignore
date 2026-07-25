@@ -4,6 +4,17 @@
 # Temporários
 *.tmp
 *~
+node_modules/
 
 # Materiais antigos e dados sensíveis (não versionar)
 antigos/
+
+# MATERIAL DO PROFESSOR — não pode ir para o repositório visível aos alunos
+material-professor/
+caso.md
+solucao-referencia/
+provas/
+PE - *.pdf
+
+# Saída do painel de acompanhamento (contém nomes de alunos)
+acompanhamento/painel.html

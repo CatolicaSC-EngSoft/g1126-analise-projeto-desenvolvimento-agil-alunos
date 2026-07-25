@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prato Cheio</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 1rem; max-width: 40rem; }
+    h1 { font-size: 1.3rem; }
+    fieldset { border: 1px solid #ccc; border-radius: .5rem; margin-bottom: 1rem; }
+    label { display: block; margin: .5rem 0 .2rem; font-size: .9rem; }
+    input, button { font-size: 1rem; padding: .6rem; width: 100%; box-sizing: border-box; }
+    button { margin-top: .8rem; cursor: pointer; }
+    li { border: 1px solid #ddd; border-radius: .5rem; padding: .6rem; margin-bottom: .5rem; list-style: none; }
+    ul { padding: 0; }
+  </style>
+</head>
+<body>
+  <h1>Prato Cheio</h1>
+
+  <fieldset>
+    <legend>Publicar doação</legend>
+    <label for="tipo">Tipo de alimento</label>
+    <input id="tipo" placeholder="Ex.: sopa, pão, frutas">
+    <label for="quantidade">Quantidade</label>
+    <input id="quantidade" placeholder="Ex.: 10 porções">
+    <label for="validade">Validade / retirar até</label>
+    <input id="validade" type="date">
+    <button id="publicar">Publicar</button>
+  </fieldset>
+
+  <h2>Doações disponíveis</h2>
+  <ul id="lista"></ul>
+
+  <script>
+    async function carregar() {
+      const res = await fetch('/api/doacoes');
+      const doacoes = await res.json();
+      const lista = document.getElementById('lista');
+      lista.innerHTML = doacoes.length
+        ? ''
+        : '<li>Nenhuma doação disponível.</li>';
+      for (const d of doacoes) {
+        const li = document.createElement('li');
+        li.textContent = `${d.tipo} — ${d.quantidade} (até ${d.validade}) `;
+        const botao = document.createElement('button');
+        botao.textContent = 'Aceitar';
+        botao.onclick = async () => {
+          await fetch(`/api/doacoes/${d.id}/aceitar`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ong: 'Minha ONG' })
+          });
+          carregar();
+        };
+        li.appendChild(botao);
+        lista.appendChild(li);
+      }
+    }
+
+    document.getElementById('publicar').onclick = async () => {
+      await fetch('/api/doacoes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          tipo: document.getElementById('tipo').value,
+          quantidade: document.getElementById('quantidade').value,
+          validade: document.getElementById('validade').value
+        })
+      });
+      carregar();
+    };
+
+    carregar();
+  </script>
+</body>
+</html>

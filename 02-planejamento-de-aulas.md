@@ -24,6 +24,10 @@ Cada grupo constrói **um único produto** para o seu caso, entregue em três it
 
 Assim, os três trabalhos maiores deixam de ser "documento, documento, produto" e passam a ser **três incrementos do mesmo produto vivo**. Cada unidade continua com sua ênfase conceitual, mas sempre aplicada a algo que executa.
 
+**Caso, stack e template.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso.md`) — na mesma stack obrigatória: **Node.js 20 + Express + SQLite/memória, com testes em Vitest**. A stack única mantém a correção uniforme e permite um template pronto. Os grupos partem do `template-repo/`, que já traz estrutura, interface, rota de saúde, CI configurado e um teste passando; as regras de negócio da história zero vêm como stubs, e os critérios de aceite como `it.todo` nos testes.
+
+**Pré-requisito para a Aula 1:** Node.js 20+ instalado e conta no GitHub, solicitados antes do início do semestre, para o encontro não virar sessão de instalação. Plano B para quem tiver problema: rodar o projeto no **GitHub Codespaces**, no navegador.
+
 **Infraestrutura mínima (montada na Unidade 1):** repositório Git por grupo, pipeline de **CI com GitHub Actions** (build + testes a cada push) e **fluxo de Pull Request** para integrar mudanças. A partir da Unidade 2, toda alteração relevante entra por PR revisado por outro integrante.
 
 ## 3. Formato da aula (faixa, 19h00–22h30)
@@ -42,38 +46,95 @@ Com ~3h30 de aula, os 70 min de exposição deixam mais de 2 horas para produç�
 
 A consulta usada na prova é **construída pelo próprio aluno durante as aulas**, não fornecida pronta.
 
-- manuscrita, de próprio punho, com limite de espaço (ex.: **1 folha por unidade**);
+- **manuscrita, de próprio punho** — o número de páginas é decisão do aluno;
 - é a **única** consulta permitida na prova — sem material impresso ou gerado por IA;
-- **presença gera a consulta**; quem faltar segue o fallback definido, sem copiar a de colega;
+- quem faltar a um encontro pode **produzir aquela parte da consulta em casa, à mão** — não se copia a de colega;
+- na **substitutiva**, o aluno pode usar as consultas das três unidades;
 - a consulta é, ela mesma, evidência de aprendizagem: sintetizar bem exige ter compreendido.
+
+**Verificação:** feita **na entrega da prova** — uma olhada rápida no material que o aluno usou, sem conferência durante a prova e sem recolhimento.
+
+Como a consulta não tem limite de páginas, as provas são **necessariamente de aplicação**: nenhuma questão deve ser respondível por localização de definição (premissa 6).
 
 ## 5. Provas com consulta (6,0 por unidade)
 
 Uma prova por unidade, **individual**, com consulta autoproduzida e **sem IA** — checkpoint de fundamento. Questões de interpretação e decisão, nunca reprodução de definição.
 
+**Formato:** 6 questões — 3 de múltipla escolha (com justificativa obrigatória de uma linha) e 3 abertas, sendo a última discursiva. A prova é pontuada em **10,0** (cinco questões de 1,6 + a discursiva de 2,0) e **convertida para os 6,0 da unidade** (nota × 0,6). Cada prova tem **3 versões** e **2 ordens de questões** por versão, totalizando 6 cadernos.
+
 ## 6. Trabalho maior (3,0 por unidade)
 
-**Em grupo (3 a 5 pessoas)**, prático e verificável, **entregue no dia da prova** da unidade. Cada trabalho é uma **iteração do produto vivo** (ver seção 2), consolidando as atividades da unidade. **Verificação individual:** a prova do dia questiona o trabalho; perguntas dirigidas, modificação ao vivo e histórico de commits/PRs checam a participação de cada integrante. A nota individual pode modular a nota do grupo. Detalhes em "Trabalhos Maiores".
+**Em grupo (3 a 5 pessoas)**, prático e verificável, **entregue no dia da prova** da unidade.
+
+**Canal de entrega:** o **Teams é o canal oficial** — é a data e hora dele que valem. Junto, o grupo cria no GitHub um **branch congelando o estado entregue** (`entrega-1`, `entrega-2`, `entrega-3`) e informa o nome na entrega do Teams. A `main` segue evoluindo; a correção olha o branch. Commits posteriores ao prazo nesse branch não contam. Cada trabalho é uma **iteração do produto vivo** (ver seção 2), consolidando as atividades da unidade.
+
+**Composição da nota (3,0):**
+
+| Parcela | Pontos | Como é avaliada |
+|---|:--:|---|
+| Artefato do grupo | 2,0 | Coletiva, por checklist: documento, produto rodando, CI verde |
+| Defesa individual | 1,0 | Individual, no dia da entrega (ver abaixo) |
+
+**Defesa individual (1,0), por aluno:**
+
+- **0,4** — explicar uma decisão do trabalho e sua justificativa;
+- **0,3** — responder a uma pergunta dirigida sobre **outra** parte do trabalho, que ele não produziu (premissa 7: cada estudante responde pelas partes fundamentais do trabalho coletivo);
+- **0,3** — fazer uma pequena modificação ao vivo, no documento ou no código.
+
+**Gatilho objetivo:** o aluno **sem nenhuma contribuição registrada no repositório** na iteração perde também a parcela do grupo — como os documentos também ficam no repositório, análise e escrita geram commits. É um fato verificável no histórico, que o aluno pode conferir antes.
+
+**A modulação vale por trabalho, de forma independente:** quem vai mal na defesa da Unidade 1 pode recuperar integralmente na Unidade 2. A defesa é feedback, não sentença.
+
+**Grupo que perde integrantes:** os remanescentes seguem com o mesmo grupo e o mesmo produto. Não há redistribuição nem fusão de grupos.
+
+**Logística (turma de 32 a 40 alunos, 8 a 10 grupos):** a defesa é **escalonada** — conforme cada aluno termina a prova, apresenta-se para os 2–3 min de defesa e encerra o encontro. A fila se distribui sozinha e não há bloco morto de tempo.
+
+Detalhes por trabalho em `trabalhos/`.
 
 ## 7. Retrospectivas
 
-O encontro que **antecede cada prova** (aulas 4, 9 e 14) inclui uma **retrospectiva** curta da iteração: o que decidimos, o que funcionou, o que mudaríamos, próximos passos. A retrospectiva incorpora uma **autoavaliação de contribuição por pares** (formulário curto), que alimenta a modulação individual da nota (premissa 7).
+O encontro que **antecede cada prova** (aulas 4, 9 e 14) inclui uma **retrospectiva** curta da iteração: o que decidimos, o que funcionou, o que mudaríamos, próximos passos.
+
+A retrospectiva inclui uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos entre os integrantes). Ela é usada como **sinal, não como cálculo**: em grupos pequenos a distribuição tende à reciprocidade ("20/20/20/20/20"), então entrar na fórmula premiaria o combinado. Quando um grupo destoa desse padrão, é ali que o professor direciona as perguntas da defesa individual.
 
 ## 8. Atividades de aula (1,0 por unidade)
 
-Pequena entrega ou demonstração a cada encontro, com **correção objetiva**: entregue no prazo e conforme o solicitado.
+Pequena entrega ou demonstração a cada encontro de conteúdo, com **correção objetiva** e binária: entregou no prazo e no formato, pontuou; não entregou, não pontuou.
 
-## 9. Prova substitutiva
+Cada unidade tem 4 encontros de conteúdo, então **cada atividade vale 0,25**. As entregas são feitas **pelo Teams**, com data e hora, e valem **independentemente de presença** — a presença é registrada separadamente, por chamada.
 
-Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); **sem IA**; substitui a **menor das três notas de prova**, valendo o resultado obtido; substitui **somente nota de prova**.
+Na Aula 1 há uma entrega específica, sem nota: a atividade **"Aceite do contrato pedagógico"** (ver `contrato-pedagogico.md`), em que cada aluno aceita o contrato e informa os **membros do time** e o **link do repositório público no GitHub**. Prazo: até o fim da Aula 2.
 
-## 10. Níveis de IA (referência de partida)
+## 9. Nota final
+
+A nota final é a **média simples das três notas de unidade** (cada uma de 0 a 10):
+
+> **Nota final = (Unidade 1 + Unidade 2 + Unidade 3) ÷ 3**
+
+Cada unidade compõe seus 10 pontos com prova (6,0), trabalho (3,0) e atividades (1,0). A substitutiva altera **apenas a nota da prova mais baixa**, e a unidade correspondente é recalculada antes da média.
+
+## 10. Prova substitutiva
+
+Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); **sem IA**, com as consultas manuscritas das três unidades; substitui a **nota de prova mais baixa**, valendo o resultado obtido; substitui **somente nota de prova**.
+
+**Falta em prova:**
+
+| Situação | Regra |
+|---|---|
+| Falta sem justificativa | Zero na prova; a recuperação é a substitutiva (Aula 16), que passa a repor em vez de melhorar |
+| Falta com atestado válido | Faz a prova perdida **no dia da próxima prova** (faltou à Prova 1 → faz Prova 1 e Prova 2 na Aula 10) |
+| Falta à Prova 3 com atestado | Faz a Prova 3 na Aula 16, no lugar da substitutiva |
+| Falta à substitutiva | **Sem reposição** — não há segunda chamada |
+
+## 11. Níveis de IA (referência de partida)
 
 - **Provas:** Sem IA.
 - **Atividades de aula:** conforme o objetivo do encontro, declarado caso a caso.
 - **Trabalho maior:** IA como colaboradora permitida, com o aluno responsável por verificar, testar, corrigir e defender.
 
-## 11. Calendário — 16 encontros
+## 12. Calendário — 16 encontros + 3 noites de trabalho
+
+Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. Além dos 16 encontros, há **3 noites de trabalho remoto** (27/08, 08/10 e 19/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
 
 | Enc. | Unidade | Foco do encontro | IA |
 |:--:|:--|:--|:--|
@@ -82,12 +143,12 @@ Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); *
 | 3 | Análise | Requisitos e histórias de usuário · escolha da fatia do walking skeleton | Colaboradora |
 | 4 | Análise | Critérios de aceite, hipóteses e riscos · walking skeleton rodando + **Retrospectiva 1** | Colaboradora |
 | **5** | **Análise** | **PROVA 1 + entrega do Trabalho 1 (análise + walking skeleton)** | **Sem IA** |
-| 6 | Projeto | Decisões de projeto · fluxo de Pull Request | Consulta |
+| 6 | Projeto | Do problema à solução: decisões de projeto · fluxo de Pull Request | Consulta |
 | 7 | Projeto | Modelagem e diagramas | Colaboradora |
 | 8 | Projeto | Decisões arquiteturais (ADR) e alternativas | Consulta |
 | 9 | Projeto | Não-funcionais e validação · evoluir o incremento + **Retrospectiva 2** | Consulta |
 | **10** | **Projeto** | **PROVA 2 + entrega do Trabalho 2 (projeto + incremento via PR)** | **Sem IA** |
-| 11 | Construção | Construção incremental (evoluir o produto) | Colaboradora |
+| 11 | Construção | Da decisão ao código: construção incremental | Colaboradora |
 | 12 | Construção | Testes a partir dos critérios de aceite | Colaboradora |
 | 13 | Construção | Revisão de código e **refatoração** | Consulta |
 | 14 | Construção | Integração, validação e evidência · **Retrospectiva 3** | Colaboradora |

@@ -67,7 +67,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 **Produção contínua (todos os grupos)**
 - Implementar e publicar o **walking skeleton** (a história zero ponta a ponta) com **CI verde**.
 - **Retrospectiva 1** (meia página) + autoavaliação de contribuição por pares.
-- Fechar a folha de consulta da unidade 1; consolidar o documento de análise.
+- Fechar a consulta da unidade 1; consolidar o documento de análise.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Escrever critérios de aceite (Dado/Quando/Então) para 3 histórias do caso.
@@ -111,6 +111,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 3. Gerar um diagrama com IA e apontar 2 coisas que ele errou ou simplificou demais.
 
 ### Encontro 8 — Decisões arquiteturais (ADR) e alternativas
+*O professor introduz uma mudança de contexto durante esta aula.*
 **Pontos a abordar**
 - Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
 - Por que registrar a decisão, e não só o resultado.
@@ -134,7 +135,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 **Produção contínua (todos os grupos)**
 - Evoluir o produto com novas histórias, integradas por **PR revisado** e CI verde.
 - **Retrospectiva 2** (meia página) + autoavaliação por pares.
-- Fechar a folha de consulta da unidade 2; consolidar o documento de projeto.
+- Fechar a consulta da unidade 2; consolidar o documento de projeto.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
@@ -165,6 +166,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 3. Gerar um trecho com IA e revisá-lo, registrando no PR o que foi mantido, o que mudou e por quê.
 
 ### Encontro 12 — Testes a partir dos critérios de aceite
+*O professor introduz uma mudança de contexto durante esta aula.*
 **Pontos a abordar**
 - Do critério de aceite ao caso de teste.
 - Tipos de teste (unidade, integração) — o suficiente para o caso.
@@ -178,6 +180,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.
 
 ### Encontro 13 — Revisão de código e refatoração
+*O professor introduz uma mudança de contexto durante esta aula.*
 **Pontos a abordar**
 - Objetivo do code review: encontrar problemas, não julgar pessoas.
 - Cheiros de código mais comuns e riscos de código gerado por IA.
@@ -204,7 +207,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 **Produção contínua (todos os grupos)**
 - Consolidar o produto + evidências; garantir CI verde.
 - **Retrospectiva 3** (meia página) + autoavaliação por pares.
-- Fechar a folha de consulta da unidade 3.
+- Fechar a consulta da unidade 3.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Integrar dois incrementos, rodar os testes e registrar o resultado.

@@ -11,8 +11,18 @@ A disciplina é orientada ao desenvolvimento da capacidade de **analisar problem
 | [`01-premissas.md`](01-premissas.md) | As 8 premissas que regem a disciplina e o princípio orientador. |
 | [`02-planejamento-de-aulas.md`](02-planejamento-de-aulas.md) | Estrutura de avaliação, formato da aula, mecanismo da consulta, provas, trabalhos, substitutiva e calendário dos 16 encontros. |
 | [`03-detalhamento-das-aulas.md`](03-detalhamento-das-aulas.md) | Para cada encontro: foco, pontos a abordar, produção contínua do produto e 3 opções de trabalho em sala (duplas/trios). |
+| [`contrato-pedagogico.md`](contrato-pedagogico.md) | O contrato apresentado e aceito na Aula 1, com as duas vias de compromissos. |
 | [`trabalhos-maiores.md`](trabalhos-maiores.md) | Os três trabalhos maiores como iterações de um mesmo produto vivo, com critérios de aceite. |
+| [`caso.md`](caso.md) | O caso da disciplina ("Prato Cheio"), entregue aos grupos na Aula 1. |
 | [`plano-de-aula.md`](plano-de-aula.md) | Plano de ensino oficial da disciplina. |
+| [`aulas/`](aulas/) | Um arquivo por encontro (16), derivado do detalhamento: foco, nível de IA, evidência, produção contínua e trabalhos de sala. |
+| [`trabalhos/`](trabalhos/) | Um arquivo por trabalho maior (3), com entregáveis, de onde vem cada aula e critérios de aceite. |
+| [`template-repo/`](template-repo/) | Base que os grupos clonam na Aula 1: estrutura, interface, CI, teste de saúde passando e a história zero em stubs. |
+| `solucao-referencia/` | História zero implementada — uso do professor, não distribuir aos alunos. |
+
+## O caso e o template
+
+Todos os grupos trabalham o mesmo caso — **Prato Cheio**, uma plataforma que conecta doadores de alimentos excedentes a ONGs ([`caso-alunos.md`](caso-alunos.md) — versão distribuída; [`caso.md`](caso.md) tem as notas do professor) — na stack obrigatória **Node.js + Express + Vitest**. O [`template-repo/`](template-repo/) é a base que os grupos clonam na Aula 1: estrutura, interface, CI do GitHub Actions e um teste passando, com a história zero em stubs. A `solucao-referencia/` é de uso do professor.
 
 ## Modelo de avaliação
 
@@ -21,10 +31,10 @@ Três ciclos — **Análise → Projeto → Construção** — cada um com 10 po
 | Item | Pontos | Formato |
 |------|:---:|--------|
 | Prova com consulta | 6,0 | Individual, sem IA, consulta autoconstruída em aula |
-| Trabalho maior | 3,0 | Em grupo (3 a 5 pessoas), iteração do produto vivo, entregue no dia da prova, com verificação individual |
-| Atividades de aula | 1,0 | Correção objetiva (prazo + formato) |
+| Trabalho maior | 3,0 | Em grupo (3 a 5 pessoas), iteração do produto vivo: **2,0 artefato do grupo + 1,0 defesa individual** |
+| Atividades de aula | 1,0 | 0,25 por encontro de conteúdo; correção objetiva e binária (prazo + formato) |
 
-Prova substitutiva cumulativa ao final, sem IA, substitui a menor das três notas de prova.
+**Nota final = média simples das três unidades.** A prova substitutiva, cumulativa e sem IA, substitui a nota de prova mais baixa.
 
 ## Produto vivo
 

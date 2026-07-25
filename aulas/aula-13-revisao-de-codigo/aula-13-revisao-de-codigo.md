@@ -4,6 +4,8 @@
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** 1 refatoração aplicada, com testes verdes antes e depois
 
+- **Observação:** o professor introduz uma mudança de contexto durante a aula — o produto e as decisões do grupo precisarão responder a ela.
+
 ## Pontos a abordar
 - Objetivo do code review: encontrar problemas, não julgar pessoas.
 - Cheiros de código mais comuns e riscos de código gerado por IA.

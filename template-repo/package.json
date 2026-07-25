@@ -1,0 +1,19 @@
+{
+  "name": "prato-cheio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Prato Cheio — conecta doadores de alimentos a ONGs. Projeto da disciplina Análise, Projeto e Desenvolvimento Ágil.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}

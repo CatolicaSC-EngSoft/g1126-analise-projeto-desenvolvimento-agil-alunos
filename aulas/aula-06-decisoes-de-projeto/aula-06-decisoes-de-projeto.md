@@ -3,7 +3,7 @@
 - **Unidade:** 2 — Projeto
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** 3 decisões que o caso exige
-- **Observação:** início da folha de consulta da unidade 2; passar a integrar mudanças por PR revisado
+- **Observação:** início da consulta da unidade 2; passar a integrar mudanças por PR revisado
 
 ## Pontos a abordar
 - O que é uma decisão de projeto (vs. detalhe de implementação).

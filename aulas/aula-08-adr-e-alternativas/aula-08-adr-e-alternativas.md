@@ -4,6 +4,8 @@
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** 1 ADR do caso
 
+- **Observação:** o professor introduz uma mudança de contexto durante a aula — o produto e as decisões do grupo precisarão responder a ela.
+
 ## Pontos a abordar
 - Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
 - Por que registrar a decisão, e não só o resultado.
