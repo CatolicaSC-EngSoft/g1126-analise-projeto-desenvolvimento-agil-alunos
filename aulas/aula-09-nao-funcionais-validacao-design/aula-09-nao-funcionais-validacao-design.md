@@ -19,4 +19,4 @@
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
 2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir para a construção).
-3. Fazer a revisão crítica do projeto de outra dupla e apontar 2 fragilidades com justificativa.
+3. Fazer a revisão crítica do projeto de outro grupo e apontar 2 fragilidades com justificativa.

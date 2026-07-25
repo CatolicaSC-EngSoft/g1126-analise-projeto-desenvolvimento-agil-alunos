@@ -4,7 +4,7 @@
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** enunciado do problema + lista de incertezas
 - **Observação:** apresentação e aceite do contrato pedagógico; formação dos grupos (3 a 5 pessoas); atribuição do caso; início da consulta da unidade
-- **Material:** `slides/aula-01-*.pptx` (25 slides) · `contrato-pedagogico.md` · `caso-alunos.md`
+- **Material:** `slides/aula-01-*.pptx` (26 slides) · `contrato-pedagogico.md` · `caso-alunos.md`
 
 ## Estrutura do encontro
 
@@ -36,7 +36,7 @@ Encerrar abrindo espaço para dúvidas: o que não for questionado na Aula 1 ou 
 ## Produção contínua (todos os grupos)
 - Formar o grupo (3 a 5 pessoas) e receber o caso **Prato Cheio** (`caso-alunos.md`).
 - Criar o **repositório público no GitHub** a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o fluxo de Pull Request.
-- Rodar `npm install`, `npm test` e `npm start` — todos os integrantes com o projeto executando na própria máquina.
+- Rodar `npm install`, `npm run db:migrar`, `npm test` e `npm start` — todos os integrantes com o projeto executando na própria máquina. O banco é SQLite, embutido no Node: **nada a instalar**. Avisar para não clonar em pasta sincronizada (OneDrive/Drive), onde o SQLite falha.
 - Entregar no Teams a atividade **"Aceite do contrato pedagógico"**, informando os **membros do time** e o **link do repositório público**. Prazo: até o fim da Aula 2.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)

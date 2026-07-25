@@ -13,7 +13,7 @@ Projetar uma solução orientada a experimentos e à gestão de backlog (*upstre
 1. **Documento de projeto** (até 4 páginas, fora diagramas):
    - decisões de projeto (mínimo 3), cada uma com 2 alternativas e tabela de trade-offs;
    - diagramas essenciais (contexto + dados ou componentes);
-   - pelo menos 2 ADRs completos (contexto, alternativas, decisão, consequências);
+   - pelo menos 2 ADRs completos (contexto, alternativas, decisão, consequências) — **um deles deve ser a decisão de migrar de SQLite para PostgreSQL**, com alternativas, consequências e critério de validação;
    - requisitos não-funcionais (mínimo 3) e seu efeito no design;
    - critérios de validação do projeto;
    - rastreabilidade: cada decisão ligada a um requisito ou risco do Trabalho 1;
@@ -29,13 +29,13 @@ Projetar uma solução orientada a experimentos e à gestão de backlog (*upstre
 | 8 | ADRs |
 | 9 | Não-funcionais, critérios de validação; incremento evoluído; Retrospectiva 2 |
 
-## Estrutura sugerida do repositório
+## Estrutura do repositório
 ```
-/projeto.md
-/adr/0001-*.md, /adr/0002-*.md
-/diagramas/
-/retrospectivas/2.md
-/src, /tests          (produto evoluído)
+docs/projeto.md                o documento de projeto
+docs/adr/0001-*.md             os ADRs (modelo em docs/adr/0000)
+docs/diagramas/                os diagramas
+docs/retrospectivas/2.md       a retrospectiva da iteração
+src/, tests/                   produto evoluído
 ```
 
 ## Restrições

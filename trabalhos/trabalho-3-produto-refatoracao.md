@@ -12,10 +12,11 @@ Construir, refatorar e validar software de forma incremental (*downstream*), com
 ## Entregáveis
 1. **Produto evoluído**: pelo menos 3 novas histórias priorizadas, integradas por PR revisado, com CI verde.
 2. **Testes** derivados dos critérios de aceite, incluindo casos limite e de erro.
-3. **Refatoração**: pelo menos 2 refatorações na base acumulada, com testes garantindo que o comportamento se manteve; registrar o cheiro de código atacado e a melhoria obtida.
+3. **Refatoração**: a **migração de SQLite para PostgreSQL** decidida no ADR da Unidade 2, mais pelo menos 1 outra refatoração — ambas com os testes garantindo que o comportamento se manteve. Registrar o que mudou e por quê.
 4. **Revisão de código**: registro de 1 revisão (3 problemas encontrados e o que mudou).
 5. **Validação**: confronto do produto com os critérios de aceite do Trabalho 1 (o que atende / não atende).
-6. **Retrospectiva 3** (meia página) + autoavaliação por pares.
+6. **Documento de fechamento** (até 4 páginas): as refatorações feitas e por quê, o resultado da validação, limitações do produto e uma seção **"Uso de IA"**.
+7. **Retrospectiva 3** (meia página) + autoavaliação por pares.
 
 ## De onde vem (aula a aula)
 | Aula | O que alimenta o trabalho |
@@ -25,13 +26,13 @@ Construir, refatorar e validar software de forma incremental (*downstream*), com
 | 13 | Revisão de código e refatoração (com testes protegendo) |
 | 14 | Integração, demo, validação contra a análise; Retrospectiva 3 |
 
-## Estrutura sugerida do repositório
+## Estrutura do repositório
 ```
-/src, /tests          (produto evoluído + testes)
-/refatoracoes.md      (o que foi refatorado e por quê)
-/validacao.md         (critérios de aceite: atende / não atende)
-/retrospectivas/3.md
-/demo/                (roteiro ou gravação da demo)
+src/, tests/                   produto evoluído + testes
+docs/refatoracoes.md           o que foi refatorado e por quê
+docs/validacao.md              critérios de aceite: atende / não atende
+docs/retrospectivas/3.md       a retrospectiva da iteração
+docs/demo.md                   roteiro da demo (ou link da gravação)
 ```
 
 ## Restrições
@@ -71,4 +72,4 @@ A `main` segue evoluindo; a correção olha o branch. Commits nele após o prazo
 | Responder pergunta dirigida sobre **outra** parte do trabalho | 0,3 |
 | Fazer uma pequena modificação ao vivo (documento ou código) | 0,3 |
 
-**Gatilho:** aluno sem nenhuma contribuição registrada no repositório nesta iteração perde também a parcela do grupo. A autoavaliação por pares da retrospectiva orienta as perguntas, mas não entra no cálculo. A modulação vale só para este trabalho — a próxima iteração recomeça limpa.
+**Gatilho:** aluno sem nenhuma contribuição registrada no repositório nesta iteração perde também a parcela do grupo. A autoavaliação por pares da retrospectiva orienta as perguntas, mas não entra no cálculo. A modulação vale só para este trabalho: a nota da defesa aqui não é afetada pelas iterações anteriores.

@@ -4,6 +4,8 @@ Um deck por encontro de conteúdo (12 decks: aulas 1–4, 6–9, 11–14). As au
 
 O deck **não é o material de estudo** — é o apoio da exposição de ~70 min. Ele existe para sustentar o ciclo de cada conceito (exemplo → contraponto → aplicação) e depois **sair do caminho**, porque mais de 2 horas da aula são de produção.
 
+> **Exceção — Aula 1 (26 slides).** É o único encontro que abre com a **Parte 1: contrato pedagógico** (9 slides dedicados: avaliação, defesa individual, consulta, níveis de IA, grupo e PR, datas, as duas vias e a atividade de aceite). Vale o investimento: quase toda dúvida de critério do semestre se resolve ali.
+
 ## Esqueleto fixo (13 a 16 slides)
 
 | # | Slide | Papel | Tempo |

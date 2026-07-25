@@ -1,13 +1,12 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import request from 'supertest';
 import { criarApp } from '../src/app.js';
-import { limpar } from '../src/repositorio.js';
+import { migrar, limparBanco, encerrar } from '../src/db.js';
 
 const app = criarApp();
 
-beforeEach(() => limpar());
-
-// Este teste já passa: prova que a aplicação sobe e que o CI está funcionando.
+// Este teste já passa e não depende do banco:
+// prova que a aplicação sobe e que o CI está funcionando.
 describe('a aplicação sobe', () => {
   it('responde na verificação de saúde', async () => {
     const res = await request(app).get('/api/saude');
@@ -17,10 +16,13 @@ describe('a aplicação sobe', () => {
 });
 
 // ---------------------------------------------------------------------------
-// Abaixo está o backlog de testes do walking skeleton.
+// Backlog de testes do walking skeleton.
 // Cada `it.todo` é um critério de aceite ainda não implementado — o CI não
 // falha por causa deles. À medida que o grupo implementa, troque `it.todo`
-// por um `it` de verdade (veja o exemplo comentado no final).
+// por um `it` de verdade (veja o exemplo comentado no fim do arquivo).
+//
+// Os testes abaixo usam o banco — que na Unidade 1 é SQLite em memória:
+// nada a instalar, nada a subir.
 // ---------------------------------------------------------------------------
 
 describe('publicar e listar doações', () => {
@@ -34,7 +36,11 @@ describe('aceitar uma doação', () => {
   it.todo('recusa aceitar uma doação que já foi aceita por outra ONG');
 });
 
-/* Exemplo de como transformar um critério de aceite em teste:
+/* Exemplo de como transformar um critério de aceite em teste.
+   Descomente o beforeEach/afterAll quando começar a usar o banco.
+
+  beforeEach(async () => { await migrar(); await limparBanco(); });
+  afterAll(async () => { await encerrar(); });
 
   Dado que um doador publicou uma doação
   Quando uma ONG consulta as doações disponíveis

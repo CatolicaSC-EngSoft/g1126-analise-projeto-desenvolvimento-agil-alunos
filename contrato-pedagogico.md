@@ -39,7 +39,9 @@ Seu grupo constrói **um único produto** para esse caso, entregue em três iter
 
 O software roda desde a Unidade 1. Não existe "entregar tudo na última semana".
 
-**Stack obrigatória:** Node.js 20 + Express + Vitest, a partir do `template-repo`.
+**Stack obrigatória:** **Node.js 22+ · Express · Vitest**, a partir do `template-repo`. A conexão com o banco, o schema e o CI já vêm prontos — vocês implementam o SQL de acesso e as regras de negócio.
+
+O **banco evolui junto com o produto**: começa em **SQLite** (embutido no Node, nada a instalar) e, na Unidade 3, é **refatorado para PostgreSQL** — decisão registrada em ADR na Unidade 2 e executada com os testes provando que o comportamento se manteve. É de propósito: trocar a camada de dados de um sistema que já funciona é uma das refatorações mais comuns da vida real.
 
 ## 4. Avaliação
 
@@ -66,6 +68,21 @@ O segundo item é intencional: você precisa responder pelas partes fundamentais
 **Gatilho objetivo:** quem **não tiver nenhuma contribuição registrada no repositório** na iteração perde também a parcela do grupo. Como os documentos também são versionados, análise e escrita geram commits. É um fato verificável, que você pode conferir antes da entrega.
 
 A defesa é **independente por trabalho**: quem vai mal na Unidade 1 recupera integralmente na Unidade 2. É feedback, não sentença.
+
+### Como é a prova
+
+6 questões sobre o caso Prato Cheio: **3 de múltipla escolha** e **3 abertas**, sendo a última discursiva. Nenhuma questão de definição — todas apresentam um cenário e pedem analisar, decidir, corrigir ou justificar.
+
+| Questão | Tipo | Valor |
+|:--:|---|:--:|
+| 1 a 3 | Múltipla escolha | 1,6 cada |
+| 4 e 5 | Aberta | 1,6 cada |
+| 6 | Discursiva | 2,0 |
+| | **Total** | **10,0** |
+
+A prova é pontuada em 10,0 e convertida para os 6,0 da unidade (nota × 0,6). Nas de múltipla escolha, **a justificativa de uma linha é obrigatória**: alternativa certa sem justificativa vale metade (0,8).
+
+Cada prova tem versões diferentes distribuídas na sala.
 
 ### Nota final
 
@@ -128,11 +145,22 @@ Nas aulas 4, 9 e 14 o grupo faz uma **retrospectiva** de meia página e uma **au
 
 Para a Aula 1 não virar sessão de instalação, chegue com:
 
-- **Node.js 20 ou superior** instalado;
+- **Node.js 22 ou superior** instalado;
 - uma **conta no GitHub** ativa;
 - um editor de código à sua escolha.
 
-Quem tiver problema de instalação usa o plano B: o projeto roda no **GitHub Codespaces**, direto no navegador, sem instalar nada na máquina.
+Só isso. Na Aula 1 o projeto sobe e o CI fica verde **sem precisar de banco de dados** — o teste de saúde não depende dele.
+
+### Docker: pré-requisito da disciplina, a partir da Unidade 3
+
+O **Docker** é pré-requisito da disciplina, mas você **não precisa dele no começo**. Até a Unidade 2 o banco é SQLite, embutido no Node. O Docker passa a ser necessário na **Unidade 3 (Aula 11)**, quando o grupo sobe o PostgreSQL para a refatoração:
+
+```bash
+docker compose up -d     # sobe o banco
+npm run db:migrar        # cria o schema
+```
+
+Você tem mais de dois meses para instalar. Se não conseguir, há dois planos B: rodar tudo no **GitHub Codespaces**, no navegador; ou usar um **PostgreSQL hospedado gratuito** (Neon, Supabase, Render) e trocar apenas a `DATABASE_URL`.
 
 ## 9. Presença, entregas e prazos
 
@@ -211,7 +239,7 @@ Na mesma entrega, você informa:
 1. **os membros do seu time** (3 a 5 pessoas, nomes completos);
 2. **o link do repositório público do grupo no GitHub**.
 
-- **Prazo:** até o fim da **Aula 2**.
+- **Prazo:** até o fim da **Aula 2**. **Esta entrega não tem nota** — é registro de aceite e de formação de grupo.
 - A entrega é **individual** — cada aluno entrega a sua, inclusive quem faltar à Aula 1. Todos os integrantes de um mesmo grupo informam o mesmo time e o mesmo repositório.
 - O repositório precisa ser **público**: é por ele que eu acompanho commits, PRs e CI ao longo do semestre.
 - Dúvidas sobre qualquer ponto devem ser levantadas na Aula 1 ou 2. Depois disso, as regras seguem como estão para todo o semestre.

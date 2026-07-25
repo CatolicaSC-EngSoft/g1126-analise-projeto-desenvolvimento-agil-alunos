@@ -5,16 +5,22 @@
 *.tmp
 *~
 node_modules/
+*.timestamp-*
 
-# Materiais antigos e dados sensíveis (não versionar)
+# Materiais antigos e planilhas com dados de alunos
 antigos/
-
-# MATERIAL DO PROFESSOR — não pode ir para o repositório visível aos alunos
-material-professor/
-caso.md
-solucao-referencia/
-provas/
 PE - *.pdf
 
-# Saída do painel de acompanhamento (contém nomes de alunos)
-acompanhamento/painel.html
+# Defensivo: o material do professor vive em OUTRO repositório
+# (g1126-analise-projeto-desenvolvimento-agil-guia-dos-professores).
+# Se alguma cópia aparecer aqui por engano, não será versionada.
+material-professor/
+solucao-referencia/
+refatoracao-postgres/
+provas/
+caso.md
+acompanhamento/
+grupos.json
+
+# Regras de IDE/MCP (não distribuir)
+.github/instructions/

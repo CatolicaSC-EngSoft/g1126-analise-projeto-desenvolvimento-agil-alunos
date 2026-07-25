@@ -2,3 +2,10 @@ node_modules/
 *.log
 .DS_Store
 .env
+
+# banco local de desenvolvimento (SQLite)
+dados.sqlite
+dados.sqlite-journal
+
+# artefatos temporários do vitest
+*.timestamp-*

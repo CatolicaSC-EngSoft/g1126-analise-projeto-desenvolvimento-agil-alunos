@@ -9,20 +9,21 @@ A disciplina é orientada ao desenvolvimento da capacidade de **analisar problem
 | Documento | Conteúdo |
 |-----------|----------|
 | [`01-premissas.md`](01-premissas.md) | As 8 premissas que regem a disciplina e o princípio orientador. |
-| [`02-planejamento-de-aulas.md`](02-planejamento-de-aulas.md) | Estrutura de avaliação, formato da aula, mecanismo da consulta, provas, trabalhos, substitutiva e calendário dos 16 encontros. |
+| [`02-planejamento-de-aulas.md`](02-planejamento-de-aulas.md) | Estrutura de avaliação, formato da aula, mecanismo da consulta, provas, trabalhos, substitutiva e calendário do semestre. |
 | [`03-detalhamento-das-aulas.md`](03-detalhamento-das-aulas.md) | Para cada encontro: foco, pontos a abordar, produção contínua do produto e 3 opções de trabalho em sala (duplas/trios). |
 | [`contrato-pedagogico.md`](contrato-pedagogico.md) | O contrato apresentado e aceito na Aula 1, com as duas vias de compromissos. |
 | [`trabalhos-maiores.md`](trabalhos-maiores.md) | Os três trabalhos maiores como iterações de um mesmo produto vivo, com critérios de aceite. |
-| [`caso.md`](caso.md) | O caso da disciplina ("Prato Cheio"), entregue aos grupos na Aula 1. |
+| [`caso-alunos.md`](caso-alunos.md) | O caso da disciplina ("Prato Cheio"), entregue aos grupos na Aula 1. |
 | [`plano-de-aula.md`](plano-de-aula.md) | Plano de ensino oficial da disciplina. |
+| [`calendario-2026-2.md`](calendario-2026-2.md) | As 21 quintas-feiras do semestre: 16 encontros, 3 noites de trabalho remoto e 2 reservas. |
+| [`slides/`](slides/) | Decks das aulas e a estrutura padrão de apresentação. |
 | [`aulas/`](aulas/) | Um arquivo por encontro (16), derivado do detalhamento: foco, nível de IA, evidência, produção contínua e trabalhos de sala. |
 | [`trabalhos/`](trabalhos/) | Um arquivo por trabalho maior (3), com entregáveis, de onde vem cada aula e critérios de aceite. |
 | [`template-repo/`](template-repo/) | Base que os grupos clonam na Aula 1: estrutura, interface, CI, teste de saúde passando e a história zero em stubs. |
-| `solucao-referencia/` | História zero implementada — uso do professor, não distribuir aos alunos. |
 
 ## O caso e o template
 
-Todos os grupos trabalham o mesmo caso — **Prato Cheio**, uma plataforma que conecta doadores de alimentos excedentes a ONGs ([`caso-alunos.md`](caso-alunos.md) — versão distribuída; [`caso.md`](caso.md) tem as notas do professor) — na stack obrigatória **Node.js + Express + Vitest**. O [`template-repo/`](template-repo/) é a base que os grupos clonam na Aula 1: estrutura, interface, CI do GitHub Actions e um teste passando, com a história zero em stubs. A `solucao-referencia/` é de uso do professor.
+Todos os grupos trabalham o mesmo caso — **Prato Cheio**, uma plataforma que conecta doadores de alimentos excedentes a ONGs ([`caso-alunos.md`](caso-alunos.md)) — na stack obrigatória **Node.js 22+ · Express · Vitest**, com **SQLite** nas Unidades 1 e 2 e **PostgreSQL** na Unidade 3 (após refatoração). O [`template-repo/`](template-repo/) é a base que os grupos clonam na Aula 1: estrutura, interface, CI do GitHub Actions e um teste passando, com a história zero em stubs.
 
 ## Modelo de avaliação
 

@@ -4,6 +4,7 @@
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** critérios de aceite para 3 histórias + 2 riscos + 1 hipótese/experimento
 - **Observação:** publicar o walking skeleton; Retrospectiva 1; fechar a consulta da unidade 1 e consolidar o documento de análise
+- **Material:** `slides/aula-04-criterios-aceite-hipoteses-riscos.pptx`
 
 ## Pontos a abordar
 - Critérios de aceite verificáveis (Dado/Quando/Então).

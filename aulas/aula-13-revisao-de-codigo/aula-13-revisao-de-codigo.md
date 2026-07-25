@@ -3,7 +3,6 @@
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** 1 refatoração aplicada, com testes verdes antes e depois
-
 - **Observação:** o professor introduz uma mudança de contexto durante a aula — o produto e as decisões do grupo precisarão responder a ela.
 
 ## Pontos a abordar
@@ -12,11 +11,13 @@
 - O que é refatorar: melhorar a estrutura sem mudar o comportamento.
 - Refatorar com segurança: os testes garantem que nada quebrou.
 - Reuso: extrair o que se repete em vez de duplicar.
+- O caso da disciplina: **trocar SQLite por PostgreSQL** sem que as regras de negócio percebam.
 
 ## Produção contínua (todos os grupos)
-- Aplicar pelo menos 1 refatoração na base do produto, protegida por testes.
+- **Executar a migração de SQLite para PostgreSQL** decidida no ADR: trocar `src/db.js`, ajustar os marcadores de parâmetro, descomentar o serviço `postgres` no CI. Os testes existentes provam que o comportamento se manteve.
+- Aplicar pelo menos 1 outra refatoração na base do produto, também protegida por testes.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
-1. Identificar um cheiro de código na base do grupo e refatorá-lo, com os testes verdes antes e depois.
-2. Revisar o código de outra dupla usando um checklist e devolver o feedback por escrito.
+1. Migrar a camada de dados para PostgreSQL mantendo os testes verdes antes e depois — sem tocar em `doacoes.js`.
+2. Revisar o código de outro grupo usando um checklist e devolver o feedback por escrito.
 3. Pegar um trecho gerado por IA, identificar onde ele é frágil e refatorá-lo.

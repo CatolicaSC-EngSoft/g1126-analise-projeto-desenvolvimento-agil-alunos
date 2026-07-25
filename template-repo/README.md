@@ -13,22 +13,42 @@ Conecta doadores de alimentos excedentes a ONGs, antes que a comida se perca.
 
 ## Como rodar
 
-Requisito: Node.js 20 ou superior.
+Requisito: **Node.js 22 ou superior**. Mais nada — o banco da Unidade 1 é SQLite, embutido no próprio Node.
 
 ```bash
-npm install     # só na primeira vez
-npm start       # sobe em http://localhost:3000
-npm test        # roda os testes
-npm run dev     # sobe recarregando a cada alteração
+npm install       # só na primeira vez
+npm run db:migrar # cria o schema (arquivo dados.sqlite)
+npm start         # sobe em http://localhost:3000
+npm test          # roda os testes
+npm run dev       # sobe recarregando a cada alteração
 ```
+
+Os testes usam SQLite **em memória**, então não sujam o banco de desenvolvimento.
+
+> **Atenção:** não deixe o repositório dentro de uma pasta sincronizada (OneDrive, Google Drive, Dropbox) nem em disco de rede. O SQLite precisa de trava de arquivo e nesses lugares falha com `disk I/O error`. Clone em uma pasta local comum, por exemplo `~/dev/`.
+
+## O banco: SQLite agora, PostgreSQL depois
+
+| Unidade | Banco | O que precisa instalar |
+|---|---|---|
+| 1 — Análise | **SQLite** (`node:sqlite`, embutido) | nada além do Node |
+| 2 — Projeto | SQLite | nada |
+| 3 — Construção | **PostgreSQL** (após refatorar) | **Docker** |
+
+A troca não é acidente de percurso: na Unidade 2 vocês registram a decisão em um **ADR** (alternativas, consequências, riscos) e na Unidade 3 executam a **refatoração** — com os testes existentes provando que o comportamento se manteve.
+
+O `src/db.js` foi desenhado para isso: ele expõe `query()` devolvendo `{ rows }`, então a troca do banco fica contida nele e não vaza para as regras de negócio. O `docker-compose.yml` já está no repositório, esperando a Unidade 3.
 
 ## Estrutura
 
 ```
+src/server.js        entrypoint (npm start)
+src/db.js            conexão e schema do banco (pronto)
 src/app.js           rotas da API
 src/doacoes.js       regras de negócio      <- implementar (U1)
-src/repositorio.js   camada de dados        <- implementar (U1)
+src/repositorio.js   acesso ao banco (SQL)  <- implementar (U1)
 public/index.html    interface (funciona no celular)
+docker-compose.yml   PostgreSQL local (usado na Unidade 3)
 tests/               testes automatizados
 docs/analise.md      documento de análise   (Trabalho 1)
 docs/projeto.md      documento de projeto   (Trabalho 2)
@@ -53,11 +73,10 @@ peça a revisão de **outro integrante**. Só então faça o merge.
 
 ## O que já está pronto e o que falta
 
-Pronto: estrutura do projeto, interface básica, rota de saúde, CI configurado e
-um teste passando (prova que a aplicação sobe).
+Pronto: estrutura do projeto, interface básica, rota de saúde, **conexão com o banco e o schema** (`src/db.js`), CI configurado e um teste passando (prova que a aplicação sobe).
 
-Falta (Trabalho 1 — walking skeleton): implementar `src/doacoes.js` e
-`src/repositorio.js` para que a história zero funcione ponta a ponta —
+Falta (Trabalho 1 — walking skeleton): implementar `src/doacoes.js` (regras) e
+`src/repositorio.js` (SQL) para que a história zero funcione ponta a ponta —
 **um doador publica uma doação → uma ONG vê a doação → a ONG a aceita e ela sai da lista.**
 Os critérios de aceite estão em `tests/doacoes.test.js` como `it.todo`: troque cada um
 por um teste de verdade conforme implementa.

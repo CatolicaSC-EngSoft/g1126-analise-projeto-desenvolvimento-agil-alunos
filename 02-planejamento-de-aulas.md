@@ -24,9 +24,14 @@ Cada grupo constrói **um único produto** para o seu caso, entregue em três it
 
 Assim, os três trabalhos maiores deixam de ser "documento, documento, produto" e passam a ser **três incrementos do mesmo produto vivo**. Cada unidade continua com sua ênfase conceitual, mas sempre aplicada a algo que executa.
 
-**Caso, stack e template.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso.md`) — na mesma stack obrigatória: **Node.js 20 + Express + SQLite/memória, com testes em Vitest**. A stack única mantém a correção uniforme e permite um template pronto. Os grupos partem do `template-repo/`, que já traz estrutura, interface, rota de saúde, CI configurado e um teste passando; as regras de negócio da história zero vêm como stubs, e os critérios de aceite como `it.todo` nos testes.
+**Caso, stack e template.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso-alunos.md`) — na mesma stack obrigatória: **Node.js 22+ · Express · Vitest**, com o banco evoluindo junto com o produto: **SQLite** (módulo `node:sqlite`, embutido no Node — nada a instalar) nas Unidades 1 e 2, e **PostgreSQL** na Unidade 3, após uma refatoração decidida por ADR. O `template-repo/` já traz a conexão e o schema (`src/db.js`), o CI e o `docker-compose.yml` esperando a Unidade 3 — o que o grupo implementa é o SQL de acesso**. A stack única mantém a correção uniforme e permite um template pronto. Os grupos partem do `template-repo/`, que já traz estrutura, interface, rota de saúde, CI configurado e um teste passando; as regras de negócio da história zero vêm como stubs, e os critérios de aceite como `it.todo` nos testes.
 
-**Pré-requisito para a Aula 1:** Node.js 20+ instalado e conta no GitHub, solicitados antes do início do semestre, para o encontro não virar sessão de instalação. Plano B para quem tiver problema: rodar o projeto no **GitHub Codespaces**, no navegador.
+**Pré-requisitos, em duas etapas** — para a Aula 1 não virar sessão de instalação:
+
+- **Aulas 1 a 10:** apenas **Node.js 22+** e conta no GitHub. O SQLite é embutido no Node, então o walking skeleton roda sem instalar banco nenhum.
+- **Unidade 3 (a partir da Aula 11):** **Docker**, para subir o PostgreSQL da refatoração. São mais de dois meses de margem para instalar.
+
+Planos B para quem não conseguir usar Docker: **GitHub Codespaces** (roda tudo no navegador) ou um **PostgreSQL hospedado gratuito** (Neon, Supabase, Render), trocando só a `DATABASE_URL`.
 
 **Infraestrutura mínima (montada na Unidade 1):** repositório Git por grupo, pipeline de **CI com GitHub Actions** (build + testes a cada push) e **fluxo de Pull Request** para integrar mudanças. A partir da Unidade 2, toda alteração relevante entra por PR revisado por outro integrante.
 
@@ -132,9 +137,9 @@ Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); *
 - **Atividades de aula:** conforme o objetivo do encontro, declarado caso a caso.
 - **Trabalho maior:** IA como colaboradora permitida, com o aluno responsável por verificar, testar, corrigir e defender.
 
-## 12. Calendário — 16 encontros + 3 noites de trabalho
+## 12. Calendário — 21 quintas: 16 encontros, 3 noites de trabalho e 2 reservas
 
-Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. Além dos 16 encontros, há **3 noites de trabalho remoto** (27/08, 08/10 e 19/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
+Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. O semestre tem **21 quintas**: os 16 encontros, 3 noites de trabalho remoto e **2 datas de reserva** (10/12 e 17/12) para reposição, plantão ou atividade complementar. Além dos 16 encontros, há **3 noites de trabalho remoto** (27/08, 08/10 e 19/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
 
 | Enc. | Unidade | Foco do encontro | IA |
 |:--:|:--|:--|:--|

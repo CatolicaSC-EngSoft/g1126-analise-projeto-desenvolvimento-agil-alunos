@@ -1,32 +1,28 @@
-// Camada de dados do Prato Cheio.
-// TODO (grupo): implementar. Hoje é só um esqueleto em memória.
-// A escolha da persistência (memória? arquivo? SQLite?) é uma decisão do grupo
-// e deve virar um ADR na Unidade 2.
+// Camada de dados do Prato Cheio — acesso ao banco.
+// TODO (grupo): implementar as quatro funções abaixo usando query().
+// A conexão e o schema já estão prontos em src/db.js.
+//
+// Marcador de parâmetro é `?` (SQL parametrizado evita injeção):
+//   const { rows } = await query('SELECT * FROM doacoes WHERE id = ?', [id]);
+import { query } from './db.js';
 
-let doacoes = [];
-let proximoId = 1;
-
-export function limpar() {
-  doacoes = [];
-  proximoId = 1;
-}
-
-// TODO: guardar a doação e devolvê-la com id e status.
-export function inserir(doacao) {
+// TODO: inserir a doação e devolver a linha criada (dica: INSERT ... RETURNING *).
+export async function inserir({ tipo, quantidade, validade }) {
   throw new Error('não implementado: repositorio.inserir');
 }
 
-// TODO: devolver apenas as doações que ainda estão disponíveis.
-export function listarDisponiveis() {
+// TODO: devolver apenas as doações com status 'disponivel'.
+export async function listarDisponiveis() {
   throw new Error('não implementado: repositorio.listarDisponiveis');
 }
 
-// TODO: encontrar uma doação pelo id.
-export function buscarPorId(id) {
+// TODO: buscar uma doação pelo id (devolver undefined se não existir).
+export async function buscarPorId(id) {
   throw new Error('não implementado: repositorio.buscarPorId');
 }
 
-// TODO: atualizar uma doação já existente.
-export function salvar(doacao) {
-  throw new Error('não implementado: repositorio.salvar');
+// TODO: marcar a doação como aceita pela ONG e devolver a linha atualizada.
+// Pense: como garantir que duas ONGs não aceitem a mesma doação?
+export async function aceitar(id, ong) {
+  throw new Error('não implementado: repositorio.aceitar');
 }

@@ -3,6 +3,7 @@
 - **Unidade:** 1 — Análise
 - **Nível de IA:** IA para consulta
 - **Evidência da aula:** mapa de stakeholders + 3 objetivos + 1 conflito
+- **Material:** `slides/aula-02-stakeholders-objetivos-conflitos.pptx`
 
 ## Pontos a abordar
 - Quem é stakeholder e seus tipos (usuário, patrocinador, operação, regulador).

@@ -34,11 +34,11 @@ Analisar um problema e levantar requisitos com foco em impacto (*outcome* vs *ou
 
 Parta do `template-repo/` (já inclui CI, interface e testes). A estrutura esperada:
 ```
-/README.md            (visão do produto + como rodar)
-/analise.md           (o documento de análise)
-/retrospectivas/1.md
-/src, /tests          (walking skeleton + testes)
-/.github/workflows/ci.yml
+README.md                      visão do produto + como rodar
+docs/analise.md                o documento de análise
+docs/retrospectivas/1.md       a retrospectiva da iteração
+src/, tests/                   walking skeleton + testes
+.github/workflows/ci.yml       o CI (já vem no template)
 ```
 
 ## Restrições

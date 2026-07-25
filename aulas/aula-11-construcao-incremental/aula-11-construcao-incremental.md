@@ -3,7 +3,7 @@
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** novo incremento integrado por PR
-- **Observação:** início da consulta da unidade 3
+- **Observação:** início da consulta da unidade 3; **a partir desta aula é necessário Docker** (PostgreSQL da refatoração)
 
 ## Pontos a abordar
 - Fatiar o trabalho em incrementos que entregam valor.
@@ -14,6 +14,7 @@
 
 ## Produção contínua (todos os grupos)
 - Evoluir o produto com uma nova história priorizada, via PR revisado e CI verde.
+- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Implementar o primeiro incremento de uma história e abrir o PR com mensagem clara.

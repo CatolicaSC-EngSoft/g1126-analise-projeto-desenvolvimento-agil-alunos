@@ -4,6 +4,7 @@
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** 5 histórias de usuário do caso
 - **Observação:** escolha da história zero (fatia vertical do walking skeleton)
+- **Material:** `slides/aula-03-requisitos-historias-usuario.pptx`
 
 ## Pontos a abordar
 - Requisitos funcionais × não-funcionais.
@@ -14,6 +15,7 @@
 
 ## Produção contínua (todos os grupos)
 - Escolher a história zero do caso: a fatia fina que virará o walking skeleton na próxima aula.
+- Rodar `npm run db:migrar` — o banco da Unidade 1 é SQLite, embutido no Node: nada a instalar.
 
 ## Trabalhos em sala (duplas/trios — escolher 1)
 1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.

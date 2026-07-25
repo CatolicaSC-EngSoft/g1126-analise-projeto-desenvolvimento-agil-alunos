@@ -62,7 +62,7 @@ A disciplina se alinha diretamente com o objetivo geral do curso ao preparar o a
 
 ## Modelo de avaliação
 
-Cada unidade vale 10 pontos: **prova com consulta (6,0)**, individual e sem IA, com consulta autoconstruída em aula; **trabalho maior (3,0)**, em grupo de 3 a 5 pessoas, prático e verificável, entregue como uma iteração do produto vivo no dia da prova; e **atividades de aula (1,0)**, de correção objetiva. Ao final há uma **prova substitutiva** cumulativa, sem IA, que substitui a menor das três notas de prova.
+Cada unidade vale 10 pontos: **prova com consulta (6,0)**, individual e sem IA, com consulta autoconstruída em aula; **trabalho maior (3,0)**, em grupo de 3 a 5 pessoas, prático e verificável, entregue como uma iteração do produto vivo no dia da prova; e **atividades de aula (1,0)**, de correção objetiva. Ao final há uma **prova substitutiva** cumulativa, sem IA, que substitui a nota de prova mais baixa.
 
 ## Bibliografia básica
 

@@ -1,6 +1,6 @@
 # Trabalhos Maiores — índice
 
-Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pessoas**, entregues no dia da prova. Não são documentos isolados: são **três iterações de um mesmo produto vivo**, construído sobre o caso [Prato Cheio](caso.md) a partir do [`template-repo/`](template-repo/).
+Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pessoas**, entregues no dia da prova. Não são documentos isolados: são **três iterações de um mesmo produto vivo**, construído sobre o caso [Prato Cheio](caso-alunos.md) a partir do [`template-repo/`](template-repo/).
 
 | Trabalho | Unidade | Entrega | O que é |
 |---|---|---|---|
@@ -11,7 +11,7 @@ Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pesso
 ## Regras comuns
 
 - **Mesmo caso, mesmo repositório público no GitHub** nas três iterações; cada decisão da Análise reaparece justificada no Projeto e implementada na Construção.
-- **Stack obrigatória:** Node.js 20 + Express + Vitest, partindo do `template-repo/`.
+- **Stack obrigatória:** Node.js 22+ · Express · Vitest, partindo do `template-repo/` (conexão, schema e CI prontos). Banco: **SQLite** nas Unidades 1 e 2, **PostgreSQL** na Unidade 3 após a refatoração.
 - **CI verde** (GitHub Actions) em todas as entregas; a partir da Unidade 2, toda mudança relevante entra por **Pull Request revisado** por outro integrante.
 - **Decisão vale mais que volume:** problema, evidências, alternativas, decisão, justificativa, riscos, limitações e critérios de validação. Documento de até **4 páginas**.
 - **Entrega:** canal oficial é o **Teams**; junto, um **branch congelando o estado** no GitHub (`entrega-1`, `entrega-2`, `entrega-3`), com o nome informado na entrega.

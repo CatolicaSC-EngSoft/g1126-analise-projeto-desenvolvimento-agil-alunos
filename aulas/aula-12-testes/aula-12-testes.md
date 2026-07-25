@@ -3,7 +3,6 @@
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** conjunto de testes de uma história
-
 - **Observação:** o professor introduz uma mudança de contexto durante a aula — o produto e as decisões do grupo precisarão responder a ela.
 
 ## Pontos a abordar

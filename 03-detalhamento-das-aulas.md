@@ -20,7 +20,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 
 **Produção contínua (todos os grupos)**
 - Formar o grupo (3 a 5 pessoas) e receber o caso.
-- Criar o repositório do grupo, configurar o **CI com GitHub Actions** (build + testes) e o **fluxo de Pull Request**.
+- Criar o repositório público do grupo a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o **fluxo de Pull Request**. O banco é SQLite, embutido no Node: rodar `npm run db:migrar` e pronto, nada a instalar.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Reescrever um "pedido de cliente" mal formulado, separando o problema real da solução que já vinha embutida.
@@ -50,6 +50,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 
 **Produção contínua (todos os grupos)**
 - Escolher a **história zero** do caso: a fatia fina que virará o walking skeleton na próxima aula.
+- Rodar `npm run db:migrar` — o banco da Unidade 1 é SQLite, embutido no Node: nada a instalar.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Escrever 5 histórias de usuário do caso e avaliá-las por INVEST, marcando qual critério cada uma falha.
@@ -116,8 +117,11 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 - Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
 - Por que registrar a decisão, e não só o resultado.
 - Consequências positivas e negativas de uma escolha.
-- Quando uma decisão merece virar ADR.
+- Quando uma decisão merece virar ADR — o caso da disciplina: **migrar de SQLite para PostgreSQL** (alternativas, consequências, riscos, como validar).
 - Revisitar decisões quando o contexto muda.
+
+**Produção contínua (todos os grupos)**
+- Escrever o **ADR da migração de SQLite para PostgreSQL** — entregável do Trabalho 2, executado na Unidade 3.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Escrever 1 ADR completo para uma decisão do caso.
@@ -140,7 +144,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
 2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir).
-3. Fazer a revisão crítica do projeto de outra dupla e apontar 2 fragilidades com justificativa.
+3. Fazer a revisão crítica do projeto de outro grupo e apontar 2 fragilidades com justificativa.
 
 ### Encontro 10 — Prova 2 + entrega/defesa do Trabalho 2
 Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + incremento integrado via PR)** e verificação individual. *Sem trabalho de sala.*
@@ -159,6 +163,7 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 
 **Produção contínua (todos os grupos)**
 - Evoluir o produto com uma nova história priorizada, via PR revisado e CI verde.
+- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
 1. Implementar o primeiro incremento de uma história e abrir o PR com mensagem clara.
@@ -187,13 +192,15 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - O que é refatorar: melhorar a estrutura sem mudar o comportamento.
 - Refatorar com segurança: os testes garantem que nada quebrou.
 - Reuso: extrair o que se repete em vez de duplicar.
+- O caso da disciplina: **trocar SQLite por PostgreSQL** sem que as regras de negócio percebam.
 
 **Produção contínua (todos os grupos)**
-- Aplicar pelo menos 1 refatoração na base do produto, protegida por testes.
+- **Executar a migração de SQLite para PostgreSQL** decidida no ADR da Unidade 2, com os testes provando que o comportamento se manteve.
+- Aplicar pelo menos 1 outra refatoração na base do produto, também protegida por testes.
 
 **Trabalhos em sala (duplas/trios — escolher 1)**
-1. Identificar um cheiro de código na base do grupo e refatorá-lo, com os testes verdes antes e depois.
-2. Revisar o código de outra dupla usando um checklist e devolver o feedback por escrito.
+1. Migrar a camada de dados para PostgreSQL mantendo os testes verdes antes e depois — sem tocar em `doacoes.js`.
+2. Revisar o código de outro grupo usando um checklist e devolver o feedback por escrito.
 3. Pegar um trecho gerado por IA, identificar onde ele é frágil e refatorá-lo.
 
 ### Encontro 14 — Integração, validação e evidência de funcionamento · Retrospectiva 3
@@ -219,5 +226,5 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 3 (produto evoluíd
 
 ---
 
-## Encontro 16 — Prova substitutiva + fechamento
-Prova substitutiva cumulativa (cobre as três unidades), sem IA, que substitui a menor das três notas de prova valendo o resultado obtido. Fechamento: retomada dos três momentos e do produto construído em iterações. *Sem trabalho de sala.*
+### Encontro 16 — Prova substitutiva + fechamento
+Prova substitutiva cumulativa (cobre as três unidades), sem IA, que substitui a nota de prova mais baixa valendo o resultado obtido. Fechamento: retomada dos três momentos e do produto construído em iterações. *Sem trabalho de sala.*
