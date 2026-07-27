@@ -13,11 +13,13 @@
 - Rastrear cada trecho de código até a decisão/história que o originou.
 - Usar IA para gerar código: o que sempre verificar.
 
-## Produção contínua (todos os grupos)
-- Evoluir o produto com uma nova história priorizada, via PR revisado e CI verde.
-- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+## Produção em sala — entrega do encontro
 
-## Trabalhos em sala (em grupo — escolher 1)
-1. Implementar o primeiro incremento de uma história e abrir o PR com mensagem clara.
-2. Definir a "definição de pronto" do grupo e aplicá-la ao incremento produzido.
-3. Gerar um trecho com IA e revisá-lo, registrando no PR o que foi mantido, o que mudou e por quê.
+Na Unidade 3 não há menu de opções: o trabalho de sala **é** a construção do produto. Cada encontro tem uma entrega declarada, que vale os 0,25 da atividade.
+
+- Evoluir o produto com **uma nova história priorizada**, integrada por PR revisado e com CI verde.
+- Escrever a **definição de pronto** do grupo e registrá-la no `README.md` do repositório.
+- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+- Se usar IA para gerar código, registrar no PR o que foi mantido, o que mudou e por quê.
+
+**Entrega do encontro:** o PR da história (aberto ou integrado) e a definição de pronto no repositório.

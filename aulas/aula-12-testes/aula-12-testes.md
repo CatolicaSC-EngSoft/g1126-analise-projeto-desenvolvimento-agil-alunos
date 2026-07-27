@@ -13,7 +13,11 @@
 - Casos limite e caminhos de erro.
 - IA para gerar testes: cobertura real × aparente.
 
-## Trabalhos em sala (em grupo — escolher 1)
-1. Escrever testes que cobrem os critérios de aceite de uma história.
-2. Acrescentar 2 casos limite ou de erro que o critério original não previa.
-3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.
+## Produção em sala — entrega do encontro
+
+- Escrever os **testes dos critérios de aceite** de uma história: trocar os `it.todo` por testes de verdade.
+- Acrescentar **2 casos limite ou de erro** que o critério original não previa.
+- **Inverter uma regra no código** e verificar quantos testes continuam verdes — é assim que se descobre teste que passa sem validar nada. Desfazer a inversão ao final.
+- Garantir o CI verde antes de encerrar.
+
+**Entrega do encontro:** os testes no repositório e o resultado da inversão de regra (quantos testes deixaram de pegar o erro).

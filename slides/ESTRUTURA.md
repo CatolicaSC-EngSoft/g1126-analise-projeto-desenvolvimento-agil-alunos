@@ -16,9 +16,11 @@ O deck **não é o material de estudo** — é o apoio da exposição de ~70 min
 | 4 | **Objetivo da aula** | Uma frase + a evidência que sai daqui | 2 min |
 | 5–12 | **Blocos de conteúdo** (2 a 4 blocos) | Cada bloco: conceito → exemplo no Prato Cheio → contraponto/erro comum → como aplicar | ~55 min |
 | 13 | **Produção contínua** | O que todos os grupos evoluem no produto hoje | 2 min |
-| 14 | **Trabalho em sala** | As 3 opções, o que entregar e o critério | 3 min |
+| 14 | **Trabalho em sala** | As 3 opções, o que entregar e o critério (Unidades 1 e 2) | 3 min |
 | 15 | **Nível de IA nesta aula** | Sem IA / consulta / colaboradora — e o que registrar | 1 min |
 | 16 | **Sua consulta** | 1 pergunta-guia: "o que desta aula você levaria para a prova?" | 1 min |
+
+Nas aulas **11 a 14** o slide 13–14 é substituído por um único **Produção em sala**, com a lista da produção e a entrega do encontro em destaque — a Unidade 3 não tem menu de opções.
 
 Nas aulas 4, 9 e 14 entra um slide extra de **Retrospectiva** (antes do 14), com as quatro perguntas e a autoavaliação por pares.
 

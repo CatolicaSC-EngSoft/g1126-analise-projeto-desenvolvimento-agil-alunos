@@ -13,11 +13,11 @@
 - Validar o produto contra os critérios de aceite da análise.
 - Preparar a entrega e a defesa individual.
 
-## Produção contínua (todos os grupos)
-- Consolidar o produto + evidências; garantir CI verde.
-- Retrospectiva 3 (meia página) + autoavaliação por pares.
+## Produção em sala — entrega do encontro
 
-## Trabalhos em sala (em grupo — escolher 1)
-1. Integrar dois incrementos, rodar os testes e registrar o resultado.
-2. Preparar uma demo de 3 minutos que prova que uma história funciona.
-3. Confrontar o produto com os critérios de aceite da Unidade 1 e marcar o que atende e o que não atende.
+- Consolidar o produto, integrar os incrementos pendentes e garantir **CI verde**.
+- Preparar a **demo de 3 minutos** e o roteiro reproduzível — testar com outro integrante executando o roteiro.
+- Confrontar o produto com os **critérios de aceite da Unidade 1** em `docs/validacao.md`, marcando atende / não atende **com a evidência de cada item**.
+- **Retrospectiva 3** (meia página) + autoavaliação de contribuição por pares.
+
+**Entrega do encontro:** o `docs/validacao.md` e o roteiro da demo.

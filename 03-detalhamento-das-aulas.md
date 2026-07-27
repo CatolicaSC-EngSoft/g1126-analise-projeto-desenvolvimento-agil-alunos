@@ -4,6 +4,8 @@
 
 Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~70 min), a **produção contínua** do produto vivo (feita por todos os grupos, evoluindo o mesmo repositório) e 3 opções de trabalho em sala. Os trabalhos de sala são feitos **no grupo do projeto (3 a 5 pessoas)**, escolhendo-se **uma** das três opções. Padrão das opções: a 1 é a produção direta do artefato; a 2 exige análise ou transformação; a 3 quase sempre envolve usar e criticar IA.
 
+**Exceção — Unidade 3.** Nas aulas 11 a 14 não há menu de opções: em construção o caminho é um só, e o trabalho de sala **é** a evolução do produto. Cada encontro tem uma **produção em sala com entrega declarada**, que vale os 0,25 da atividade.
+
 **Produto vivo:** o software roda desde a Unidade 1 (walking skeleton) e evolui a cada iteração. As aulas 4, 9 e 14 (antes das provas) incluem **retrospectiva** com autoavaliação de contribuição por pares.
 
 ---
@@ -161,14 +163,17 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Rastrear cada trecho de código até a decisão/história que o originou.
 - Usar IA para gerar código: o que sempre verificar.
 
-**Produção contínua (todos os grupos)**
-- Evoluir o produto com uma nova história priorizada, via PR revisado e CI verde.
-- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+**Produção em sala — entrega do encontro**
 
-**Trabalhos em sala (em grupo — escolher 1)**
-1. Implementar o primeiro incremento de uma história e abrir o PR com mensagem clara.
-2. Definir a "definição de pronto" do grupo e aplicá-la ao incremento produzido.
-3. Gerar um trecho com IA e revisá-lo, registrando no PR o que foi mantido, o que mudou e por quê.
+Na Unidade 3 não há menu de opções: o trabalho de sala **é** a construção do produto. Cada encontro tem uma entrega declarada, que vale os 0,25 da atividade.
+
+- Evoluir o produto com **uma nova história priorizada**, integrada por PR revisado e com CI verde.
+- Escrever a **definição de pronto** do grupo e registrá-la no `README.md` do repositório.
+- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+- Se usar IA para gerar código, registrar no PR o que foi mantido, o que mudou e por quê.
+
+**Entrega do encontro:** o PR da história (aberto ou integrado) e a definição de pronto no repositório.
+
 
 ### Encontro 12 — Testes a partir dos critérios de aceite
 *O professor introduz uma mudança de contexto durante esta aula.*
@@ -179,10 +184,15 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Casos limite e caminhos de erro.
 - IA para gerar testes: cobertura real × aparente.
 
-**Trabalhos em sala (em grupo — escolher 1)**
-1. Escrever testes que cobrem os critérios de aceite de uma história.
-2. Acrescentar 2 casos limite ou de erro que o critério original não previa.
-3. Gerar testes com IA e verificar se algum "passa" sem de fato validar nada.
+**Produção em sala — entrega do encontro**
+
+- Escrever os **testes dos critérios de aceite** de uma história: trocar os `it.todo` por testes de verdade.
+- Acrescentar **2 casos limite ou de erro** que o critério original não previa.
+- **Inverter uma regra no código** e verificar quantos testes continuam verdes — é assim que se descobre teste que passa sem validar nada. Desfazer a inversão ao final.
+- Garantir o CI verde antes de encerrar.
+
+**Entrega do encontro:** os testes no repositório e o resultado da inversão de regra (quantos testes deixaram de pegar o erro).
+
 
 ### Encontro 13 — Revisão de código e refatoração
 *O professor introduz uma mudança de contexto durante esta aula.*
@@ -194,14 +204,15 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Reuso: extrair o que se repete em vez de duplicar.
 - O caso da disciplina: **trocar SQLite por PostgreSQL** sem que as regras de negócio percebam.
 
-**Produção contínua (todos os grupos)**
-- **Executar a migração de SQLite para PostgreSQL** decidida no ADR da Unidade 2, com os testes provando que o comportamento se manteve.
-- Aplicar pelo menos 1 outra refatoração na base do produto, também protegida por testes.
+**Produção em sala — entrega do encontro**
 
-**Trabalhos em sala (em grupo — escolher 1)**
-1. Migrar a camada de dados para PostgreSQL mantendo os testes verdes antes e depois — sem tocar em `doacoes.js`.
-2. Revisar o código de outro grupo usando um checklist e devolver o feedback por escrito.
-3. Pegar um trecho gerado por IA, identificar onde ele é frágil e refatorá-lo.
+- **Executar a migração de SQLite para PostgreSQL** decidida no ADR: trocar `src/db.js`, ajustar os marcadores de parâmetro, descomentar o serviço `postgres` no CI. Testes verdes antes e depois, **sem tocar em `src/doacoes.js`**.
+- Aplicar pelo menos **1 outra refatoração** na base do produto, também protegida por testes.
+- Registrar em `docs/refatoracoes.md` o cheiro de código atacado, o que mudou e a evidência dos testes.
+- **Revisar o código de outro grupo** com um checklist e devolver o feedback por escrito.
+
+**Entrega do encontro:** a migração integrada, o `docs/refatoracoes.md` e o feedback entregue ao outro grupo.
+
 
 ### Encontro 14 — Integração, validação e evidência de funcionamento · Retrospectiva 3
 **Pontos a abordar**
@@ -211,15 +222,15 @@ Prova individual com consulta, sem IA. Entrega do **Trabalho 2 (projeto + increm
 - Validar o produto contra os critérios de aceite da análise.
 - Preparar a entrega e a defesa individual.
 
-**Produção contínua (todos os grupos)**
-- Consolidar o produto + evidências; garantir CI verde.
-- **Retrospectiva 3** (meia página) + autoavaliação por pares.
-- Fechar a consulta da unidade 3.
+**Produção em sala — entrega do encontro**
 
-**Trabalhos em sala (em grupo — escolher 1)**
-1. Integrar dois incrementos, rodar os testes e registrar o resultado.
-2. Preparar uma demo de 3 minutos que prova que uma história funciona.
-3. Confrontar o produto com os critérios de aceite da Unidade 1 e marcar o que atende e o que não atende.
+- Consolidar o produto, integrar os incrementos pendentes e garantir **CI verde**.
+- Preparar a **demo de 3 minutos** e o roteiro reproduzível — testar com outro integrante executando o roteiro.
+- Confrontar o produto com os **critérios de aceite da Unidade 1** em `docs/validacao.md`, marcando atende / não atende **com a evidência de cada item**.
+- **Retrospectiva 3** (meia página) + autoavaliação de contribuição por pares.
+
+**Entrega do encontro:** o `docs/validacao.md` e o roteiro da demo.
+
 
 ### Encontro 15 — Prova 3 + entrega/defesa do Trabalho 3
 Prova individual com consulta, sem IA. Entrega do **Trabalho 3 (produto evoluído + refatoração, com evidências)** e verificação individual dos integrantes. *Sem trabalho de sala.*
