@@ -17,7 +17,7 @@
 - Implementar e publicar o walking skeleton (história zero ponta a ponta) com CI verde.
 - Retrospectiva 1 (meia página) + autoavaliação de contribuição por pares.
 
-## Trabalhos em sala (em grupo — escolher 1)
+## Trabalhos em sala (em grupo — fazer as três)
 1. Escrever critérios de aceite (Dado/Quando/Então) para 3 histórias do caso.
 2. Transformar uma suposição do caso em hipótese testável e desenhar um experimento para validá-la.
 3. Levantar 2 riscos do caso e propor uma mitigação concreta para cada um.

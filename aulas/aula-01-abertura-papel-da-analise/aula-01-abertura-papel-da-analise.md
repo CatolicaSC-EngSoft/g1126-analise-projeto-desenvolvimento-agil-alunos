@@ -39,7 +39,7 @@ Encerrar abrindo espaço para dúvidas: o que não for questionado na Aula 1 ou 
 - Rodar `npm install`, `npm run db:migrar`, `npm test` e `npm start` — todos os integrantes com o projeto executando na própria máquina. O banco é SQLite, embutido no Node: **nada a instalar**. Avisar para não clonar em pasta sincronizada (OneDrive/Drive), onde o SQLite falha.
 - Entregar no Teams a atividade **"Aceite do contrato pedagógico"**, informando os **membros do time** e o **link do repositório público**. Prazo: até o fim da Aula 2.
 
-## Trabalhos em sala (em grupo — escolher 1)
+## Trabalhos em sala (em grupo — fazer as três)
 1. Reescrever um "pedido de cliente" mal formulado, separando o problema real da solução que já vinha embutida.
 2. A partir de um caso curto, listar 5 incertezas que precisam ser resolvidas antes de projetar qualquer solução.
 3. Identificar no caso três restrições (prazo, técnica, negócio) e explicar como cada uma limita as soluções possíveis.

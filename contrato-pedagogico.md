@@ -139,6 +139,8 @@ Grupos de **3 a 5 pessoas**, formados na Aula 1 e mantidos ao longo do semestre.
 
 Se um grupo perder integrantes ao longo do semestre (desistência, trancamento, reprovação por falta), **os remanescentes seguem com o mesmo grupo e o mesmo produto**. Não há redistribuição de alunos nem fusão de grupos: o produto continua de onde estava, e a defesa individual segue valendo por pessoa.
 
+**Quem entra depois** (transferência, matrícula tardia) **é alocado no grupo com menos integrantes**. Assume uma história do backlog na iteração corrente, e a defesa individual passa a valer a partir da unidade em que entrou — não responde pelas unidades anteriores à sua entrada.
+
 Nas aulas 4, 9 e 14 o grupo faz uma **retrospectiva** de meia página e uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos). A autoavaliação não entra no cálculo da nota — ela orienta as perguntas que eu faço na defesa individual.
 
 ## 8. Antes da primeira aula

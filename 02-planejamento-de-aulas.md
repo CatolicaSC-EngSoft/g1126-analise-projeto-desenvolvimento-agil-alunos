@@ -98,7 +98,7 @@ Uma prova por unidade, **individual**, com consulta autoproduzida e **sem IA** �
 
 **A modulação vale por trabalho, de forma independente:** quem vai mal na defesa da Unidade 1 pode recuperar integralmente na Unidade 2. A defesa é feedback, não sentença.
 
-**Grupo que perde integrantes:** os remanescentes seguem com o mesmo grupo e o mesmo produto. Não há redistribuição nem fusão de grupos.
+**Grupo que perde integrantes:** os remanescentes seguem com o mesmo grupo e o mesmo produto. Não há redistribuição nem fusão de grupos. **Aluno que entra depois** é alocado no grupo com menos integrantes, assume uma história da iteração corrente e sua defesa individual conta a partir da unidade em que entrou.
 
 **Logística (turma de 32 a 40 alunos, 8 a 10 grupos):** a defesa é **escalonada** — conforme cada aluno termina a prova, apresenta-se para os 2–3 min de defesa e encerra o encontro. A fila se distribui sozinha e não há bloco morto de tempo.
 

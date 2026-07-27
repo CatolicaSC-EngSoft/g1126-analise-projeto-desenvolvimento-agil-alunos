@@ -10,7 +10,7 @@ A disciplina é orientada ao desenvolvimento da capacidade de **analisar problem
 |-----------|----------|
 | [`01-premissas.md`](01-premissas.md) | As 8 premissas que regem a disciplina e o princípio orientador. |
 | [`02-planejamento-de-aulas.md`](02-planejamento-de-aulas.md) | Estrutura de avaliação, formato da aula, mecanismo da consulta, provas, trabalhos, substitutiva e calendário do semestre. |
-| [`03-detalhamento-das-aulas.md`](03-detalhamento-das-aulas.md) | Para cada encontro: foco, pontos a abordar, produção contínua do produto e 3 opções de trabalho em sala (em grupo). |
+| [`03-detalhamento-das-aulas.md`](03-detalhamento-das-aulas.md) | Para cada encontro: foco, pontos a abordar, produção contínua do produto e as três atividades de trabalho em sala (em grupo). |
 | [`contrato-pedagogico.md`](contrato-pedagogico.md) | O contrato apresentado e aceito na Aula 1, com as duas vias de compromissos. |
 | [`trabalhos-maiores.md`](trabalhos-maiores.md) | Os três trabalhos maiores como iterações de um mesmo produto vivo, com critérios de aceite. |
 | [`caso-alunos.md`](caso-alunos.md) | O caso da disciplina ("Prato Cheio"), entregue aos grupos na Aula 1. |

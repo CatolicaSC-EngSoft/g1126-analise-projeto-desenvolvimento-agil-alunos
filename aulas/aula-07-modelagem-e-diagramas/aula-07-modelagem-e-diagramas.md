@@ -12,7 +12,7 @@
 - Modelar o fluxo principal do caso.
 - Gerar e revisar diagramas com IA.
 
-## Trabalhos em sala (em grupo — escolher 1)
+## Trabalhos em sala (em grupo — fazer as três)
 1. Desenhar o diagrama de contexto do caso (o sistema e seus atores externos).
 2. Modelar os dados principais do caso (entidades e relações).
 3. Gerar um diagrama com IA e apontar 2 coisas que ele errou ou simplificou demais.

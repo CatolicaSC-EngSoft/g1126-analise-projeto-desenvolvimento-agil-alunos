@@ -16,7 +16,7 @@
 ## Produção contínua (todos os grupos)
 - Passar a integrar toda mudança relevante do produto por PR revisado por outro integrante.
 
-## Trabalhos em sala (em grupo — escolher 1)
+## Trabalhos em sala (em grupo — fazer as três)
 1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
 2. Montar uma tabela de trade-offs (critérios × alternativas) para uma das decisões.
 3. Ligar cada decisão a um requisito ou risco da unidade de Análise que a justifica.

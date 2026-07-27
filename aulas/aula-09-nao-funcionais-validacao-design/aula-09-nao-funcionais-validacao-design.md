@@ -17,7 +17,7 @@
 - Evoluir o produto com novas histórias, integradas por PR revisado e CI verde.
 - Retrospectiva 2 (meia página) + autoavaliação por pares.
 
-## Trabalhos em sala (em grupo — escolher 1)
+## Trabalhos em sala (em grupo — fazer as três)
 1. Levantar 3 requisitos não-funcionais do caso e explicar como cada um afeta o design.
 2. Montar um checklist de validação do projeto (o que precisa ser verdade para seguir para a construção).
 3. Fazer a revisão crítica do projeto de outro grupo e apontar 2 fragilidades com justificativa.
