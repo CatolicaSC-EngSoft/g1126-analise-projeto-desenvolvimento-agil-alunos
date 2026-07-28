@@ -24,3 +24,6 @@ grupos.json
 
 # Regras de IDE/MCP (não distribuir)
 .github/instructions/
+
+# arquivos de bloqueio do Office (PowerPoint aberto)
+~$*

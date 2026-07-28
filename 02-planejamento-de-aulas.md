@@ -32,14 +32,30 @@ Cada grupo constrói **um único produto** para o seu caso, entregue em três it
 
 Assim, os três trabalhos maiores deixam de ser "documento, documento, produto" e passam a ser **três incrementos do mesmo produto vivo**. Cada unidade continua com sua ênfase conceitual, mas sempre aplicada a algo que executa.
 
-**Caso, stack e template.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso-alunos.md`) — na mesma stack obrigatória: **Node.js 22+ · Express · Vitest**, com o banco evoluindo junto com o produto: **SQLite** (módulo `node:sqlite`, embutido no Node — nada a instalar) nas Unidades 1 e 2, e **PostgreSQL** na Unidade 3, após uma refatoração decidida por ADR. O `template-repo/` já traz a conexão e o schema (`src/db.js`), o CI e o `docker-compose.yml` esperando a Unidade 3 — o que o grupo implementa é o SQL de acesso**. A stack única mantém a correção uniforme e permite um template pronto. Os grupos partem do `template-repo/`, que já traz estrutura, interface, rota de saúde, CI configurado e um teste passando; as regras de negócio da história zero vêm como stubs, e os critérios de aceite como `it.todo` nos testes.
+**Caso.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso-alunos.md`).
+
+**Stack preferencial: Node.js 22+ · Express · Vitest.** É a stack do `template-repo/`, que já entrega estrutura, interface, rota de saúde, CI configurado e um teste passando, com as regras de negócio da história zero em stubs e os critérios de aceite como `it.todo`. O banco evolui junto com o produto: **SQLite** (módulo `node:sqlite`, embutido — nada a instalar) nas Unidades 1 e 2, e **PostgreSQL** na Unidade 3, após uma refatoração decidida por ADR.
+
+**Outra stack é permitida, desde que justificada.** O grupo que quiser usar outra linguagem ou framework registra um **ADR** (`docs/adr/0001-escolha-da-stack.md`), entregue no **Trabalho 1**, com contexto, alternativas, decisão, consequências e riscos assumidos. Escolher a stack é, ela mesma, uma decisão de projeto — e a disciplina avalia decisões justificadas.
+
+**O que qualquer stack precisa garantir** (é o que mantém a correção uniforme e o que o checklist verifica):
+
+| Compromisso | Por quê |
+|---|---|
+| Repositório público no GitHub com **CI verde** (GitHub Actions) | é a evidência objetiva de que o produto roda |
+| Uma **rota de verificação de saúde** que responde 200 | o CI e o professor checam que a aplicação sobe |
+| **Testes automatizados**, executáveis por um comando único | os critérios de aceite precisam ser verificáveis |
+| **Três comandos documentados no README**: instalar, testar, executar | qualquer pessoa reproduz sem perguntar |
+| **Banco relacional**, migrado para PostgreSQL na Unidade 3 | a refatoração da Unidade 3 é conteúdo, não opção |
+
+**O custo é do grupo.** Fora da stack preferencial não há template pronto, não há solução de referência para comparar, e o apoio em aula é limitado — o tempo do professor está calibrado para a stack do template. Isso faz parte das consequências que o ADR precisa reconhecer.
 
 **Pré-requisitos, em duas etapas** — para a Aula 1 não virar sessão de instalação:
 
 - **Aulas 1 a 10:** apenas **Node.js 22+** e conta no GitHub. O SQLite é embutido no Node, então o walking skeleton roda sem instalar banco nenhum.
-- **Unidade 3 (a partir da Aula 11):** **Docker**, para subir o PostgreSQL da refatoração. São mais de dois meses de margem para instalar.
+- **Unidade 3 (a partir da Aula 11):** um **PostgreSQL acessível**, para a refatoração. São mais de dois meses de margem para providenciar.
 
-Planos B para quem não conseguir usar Docker: **GitHub Codespaces** (roda tudo no navegador) ou um **PostgreSQL hospedado gratuito** (Neon, Supabase, Render), trocando só a `DATABASE_URL`.
+Como subir esse PostgreSQL é **decisão do grupo**, comparada no ADR da Unidade 2: instalar na máquina, subir um contêiner, usar **GitHub Codespaces** ou um **serviço gerenciado gratuito** (Neon, Supabase, Render). A disciplina não impõe o caminho — exige o banco alcançável por `DATABASE_URL`, o schema migrado e o CI verde.
 
 **Infraestrutura mínima (montada na Unidade 1):** repositório Git por grupo, pipeline de **CI com GitHub Actions** (build + testes a cada push) e **fluxo de Pull Request** para integrar mudanças. A partir da Unidade 2, toda alteração relevante entra por PR revisado por outro integrante.
 

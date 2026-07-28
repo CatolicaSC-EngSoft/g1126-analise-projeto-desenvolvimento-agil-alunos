@@ -36,6 +36,8 @@ Encerrar abrindo espaço para dúvidas: o que não for questionado na Aula 1 ou 
 ## Produção contínua (todos os grupos)
 - Formar o grupo (3 a 5 pessoas) e receber o caso **Prato Cheio** (`caso-alunos.md`).
 - Criar o **repositório público no GitHub** a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o fluxo de Pull Request.
+- Decidir a stack: a preferencial é a do template. Quem quiser outra assume o ADR de justificativa, entregue no Trabalho 1.
+- Registrar a **evidência do encontro** no repositório: o enunciado do problema e a lista de incertezas vão para as seções `## Problema central` e `## Incertezas` de `docs/analise.md`, que já vem no template. É o começo do documento do Trabalho 1 — não um texto descartável.
 - Rodar `npm install`, `npm run db:migrar`, `npm test` e `npm start` — todos os integrantes com o projeto executando na própria máquina. O banco é SQLite, embutido no Node: **nada a instalar**. Avisar para não clonar em pasta sincronizada (OneDrive/Drive), onde o SQLite falha.
 - Entregar no Teams a atividade **"Aceite do contrato pedagógico"**, informando os **membros do time** e o **link do repositório público**. Prazo: até o fim da Aula 2.
 

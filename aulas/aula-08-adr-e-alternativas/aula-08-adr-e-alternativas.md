@@ -10,7 +10,7 @@
 - Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
 - Por que registrar a decisão, e não só o resultado.
 - Consequências positivas e negativas de uma escolha.
-- Quando uma decisão merece virar ADR — o caso da disciplina: **migrar de SQLite para PostgreSQL** (alternativas, consequências, riscos, como validar).
+- Quando uma decisão merece virar ADR — os dois casos da disciplina: a **escolha da stack** (se o grupo saiu da preferencial) e **migrar de SQLite para PostgreSQL** (alternativas, consequências, riscos, como validar).
 - Revisitar decisões quando o contexto muda.
 
 ## Produção contínua (todos os grupos)

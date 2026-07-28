@@ -39,7 +39,11 @@ Seu grupo constrói **um único produto** para esse caso, entregue em três iter
 
 O software roda desde a Unidade 1. Não existe "entregar tudo na última semana".
 
-**Stack obrigatória:** **Node.js 22+ · Express · Vitest**, a partir do `template-repo`. A conexão com o banco, o schema e o CI já vêm prontos — vocês implementam o SQL de acesso e as regras de negócio.
+**Stack preferencial:** **Node.js 22+ · Express · Vitest**, a partir do `template-repo`. A conexão com o banco, o schema e o CI já vêm prontos — vocês implementam o SQL de acesso e as regras de negócio.
+
+**Outra stack é permitida se vocês justificarem.** Registrem um ADR (`docs/adr/0001-escolha-da-stack.md`) na entrega do Trabalho 1, com alternativas, consequências e riscos. Em qualquer stack, o produto precisa garantir: repositório público com **CI verde**, uma **rota de saúde** que responde, **testes automatizados** rodando por um comando, os **três comandos** (instalar, testar, executar) documentados no README, e **banco relacional** migrado para PostgreSQL na Unidade 3.
+
+Fora da stack preferencial vocês assumem o custo: não há template pronto nem solução de referência para comparar, e o apoio em aula é limitado. Isso precisa estar no ADR.
 
 O **banco evolui junto com o produto**: começa em **SQLite** (embutido no Node, nada a instalar) e, na Unidade 3, é **refatorado para PostgreSQL** — decisão registrada em ADR na Unidade 2 e executada com os testes provando que o comportamento se manteve. É de propósito: trocar a camada de dados de um sistema que já funciona é uma das refatorações mais comuns da vida real.
 
@@ -153,16 +157,13 @@ Para a Aula 1 não virar sessão de instalação, chegue com:
 
 Só isso. Na Aula 1 o projeto sobe e o CI fica verde **sem precisar de banco de dados** — o teste de saúde não depende dele.
 
-### Docker: pré-requisito da disciplina, a partir da Unidade 3
+### PostgreSQL: necessário a partir da Unidade 3
 
-O **Docker** é pré-requisito da disciplina, mas você **não precisa dele no começo**. Até a Unidade 2 o banco é SQLite, embutido no Node. O Docker passa a ser necessário na **Unidade 3 (Aula 11)**, quando o grupo sobe o PostgreSQL para a refatoração:
+Até a Unidade 2 o banco é **SQLite**, embutido no Node — nada a instalar. Na **Unidade 3 (Aula 11)** o grupo passa a precisar de um **PostgreSQL acessível**, para executar a refatoração decidida no ADR da Unidade 2.
 
-```bash
-docker compose up -d     # sobe o banco
-npm run db:migrar        # cria o schema
-```
+**Como subir esse banco é escolha do grupo**, e faz parte da decisão registrada no ADR: instalar o PostgreSQL na máquina, subir um contêiner, usar o **GitHub Codespaces** (roda tudo no navegador) ou um **serviço gerenciado gratuito** (Neon, Supabase, Render). O que a disciplina exige é o banco alcançável por `DATABASE_URL`, o schema migrado por `npm run db:migrar` e o CI verde.
 
-Você tem mais de dois meses para instalar. Se não conseguir, há dois planos B: rodar tudo no **GitHub Codespaces**, no navegador; ou usar um **PostgreSQL hospedado gratuito** (Neon, Supabase, Render) e trocar apenas a `DATABASE_URL`.
+Você tem mais de dois meses de margem para resolver isso — e a comparação entre os caminhos é conteúdo, não obstáculo.
 
 ## 9. Presença, entregas e prazos
 

@@ -20,7 +20,8 @@ Analisar um problema e levantar requisitos com foco em impacto (*outcome* vs *ou
    - 1 decisão de análise (ex.: recorte de escopo) com alternativas e justificativa;
    - seção "Uso de IA".
 2. **Walking skeleton** no repositório: a história zero funcionando ponta a ponta (interface → lógica → dados), com **CI (GitHub Actions) verde**.
-3. **Retrospectiva 1** (meia página) + autoavaliação de contribuição por pares.
+3. **ADR da escolha da stack** (`docs/adr/0001-escolha-da-stack.md`) — **somente se o grupo não usar a stack preferencial**: contexto, alternativas, decisão, consequências e riscos assumidos, incluindo a ausência de template e de solução de referência.
+4. **Retrospectiva 1** (meia página) + autoavaliação de contribuição por pares.
 
 ## De onde vem (aula a aula)
 | Aula | O que alimenta o trabalho |
@@ -62,6 +63,7 @@ A `main` segue evoluindo; a correção olha o branch. Commits nele após o prazo
 - [ ] Documento contém todos os itens da lista de entregáveis.
 - [ ] Histórias com critérios de aceite verificáveis.
 - [ ] Walking skeleton executa ponta a ponta e o CI está verde.
+- [ ] Se a stack não é a preferencial: o ADR da escolha está entregue e os cinco compromissos técnicos estão atendidos.
 - [ ] A decisão de análise tem alternativas e justificativa.
 - [ ] Retrospectiva e seção "Uso de IA" presentes.
 

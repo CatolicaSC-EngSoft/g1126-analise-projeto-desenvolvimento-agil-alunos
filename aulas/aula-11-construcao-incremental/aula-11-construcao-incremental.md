@@ -3,7 +3,7 @@
 - **Unidade:** 3 — Construção
 - **Nível de IA:** IA como colaboradora
 - **Evidência da aula:** novo incremento integrado por PR
-- **Observação:** início da consulta da unidade 3; **a partir desta aula é necessário Docker** (PostgreSQL da refatoração)
+- **Observação:** início da consulta da unidade 3; **a partir desta aula é necessário um PostgreSQL acessível** (o da refatoração — caminho escolhido no ADR da Unidade 2)
 - **Material:** `slides/aula-11-construcao-incremental.pptx`
 
 ## Pontos a abordar
@@ -19,7 +19,7 @@ Na Unidade 3 não há menu de opções: o trabalho de sala **é** a construção
 
 - Evoluir o produto com **uma nova história priorizada**, integrada por PR revisado e com CI verde.
 - Escrever a **definição de pronto** do grupo e registrá-la no `README.md` do repositório.
-- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+- Preparar o ambiente do **PostgreSQL** escolhido no ADR da Unidade 2 e iniciar a migração (instalação local, contêiner ou serviço gerenciado — o caminho é do grupo).
 - Se usar IA para gerar código, registrar no PR o que foi mantido, o que mudou e por quê.
 
 **Entrega do encontro:** o PR da história (aberto ou integrado) e a definição de pronto no repositório.

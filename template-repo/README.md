@@ -13,7 +13,9 @@ Conecta doadores de alimentos excedentes a ONGs, antes que a comida se perca.
 
 ## Como rodar
 
-Requisito: **Node.js 22 ou superior**. Mais nada — o banco da Unidade 1 é SQLite, embutido no próprio Node.
+Requisito: **Node.js 22.13 ou superior**. Mais nada — o banco da Unidade 1 é SQLite, embutido no próprio Node.
+
+> Esta é a **stack preferencial** da disciplina. Se o seu grupo optar por outra, registre o ADR de justificativa e garanta os mesmos compromissos: repositório público com CI verde, rota de saúde, testes por um comando, os três comandos documentados aqui no README e banco relacional migrado para PostgreSQL na Unidade 3.
 
 ```bash
 npm install       # só na primeira vez
@@ -25,6 +27,9 @@ npm run dev       # sobe recarregando a cada alteração
 
 Os testes usam SQLite **em memória**, então não sujam o banco de desenvolvimento.
 
+> Ao rodar `npm test` o Node imprime `ExperimentalWarning: SQLite is an experimental feature`.
+> É esperado — o módulo embutido `node:sqlite` ainda é marcado como experimental. Não é erro e não reprova o CI.
+
 > **Atenção:** não deixe o repositório dentro de uma pasta sincronizada (OneDrive, Google Drive, Dropbox) nem em disco de rede. O SQLite precisa de trava de arquivo e nesses lugares falha com `disk I/O error`. Clone em uma pasta local comum, por exemplo `~/dev/`.
 
 ## O banco: SQLite agora, PostgreSQL depois
@@ -33,11 +38,13 @@ Os testes usam SQLite **em memória**, então não sujam o banco de desenvolvime
 |---|---|---|
 | 1 — Análise | **SQLite** (`node:sqlite`, embutido) | nada além do Node |
 | 2 — Projeto | SQLite | nada |
-| 3 — Construção | **PostgreSQL** (após refatorar) | **Docker** |
+| 3 — Construção | **PostgreSQL** (após refatorar) | um PostgreSQL acessível — o caminho é escolha do grupo |
 
 A troca não é acidente de percurso: na Unidade 2 vocês registram a decisão em um **ADR** (alternativas, consequências, riscos) e na Unidade 3 executam a **refatoração** — com os testes existentes provando que o comportamento se manteve.
 
-O `src/db.js` foi desenhado para isso: ele expõe `query()` devolvendo `{ rows }`, então a troca do banco fica contida nele e não vaza para as regras de negócio. O `docker-compose.yml` já está no repositório, esperando a Unidade 3.
+O `src/db.js` foi desenhado para isso: ele expõe `query()` devolvendo `{ rows }`, então a troca do banco fica contida nele e não vaza para as regras de negócio.
+
+**Como o PostgreSQL vai subir é decisão do grupo**, comparada no mesmo ADR: instalar o PostgreSQL na máquina, subir um contêiner, ou usar um serviço gerenciado gratuito (Neon, Supabase, Render). A disciplina não impõe o caminho — exige o banco alcançável por `DATABASE_URL`, o schema migrado e o CI verde. Cada opção tem custo e risco diferentes, e reconhecê-los é parte da decisão.
 
 ## Estrutura
 
@@ -48,11 +55,13 @@ src/app.js           rotas da API
 src/doacoes.js       regras de negócio      <- implementar (U1)
 src/repositorio.js   acesso ao banco (SQL)  <- implementar (U1)
 public/index.html    interface (funciona no celular)
-docker-compose.yml   PostgreSQL local (usado na Unidade 3)
 tests/               testes automatizados
 docs/analise.md      documento de análise   (Trabalho 1)
 docs/projeto.md      documento de projeto   (Trabalho 2)
 docs/adr/            decisões arquiteturais (Trabalho 2)
+docs/validacao.md    validação e testes     (Trabalho 3)
+docs/refatoracoes.md refatorações feitas    (Trabalho 3)
+docs/demo.md         roteiro da demo        (Trabalho 3)
 docs/retrospectivas/ retrospectiva de cada iteração
 .github/workflows/   pipeline de CI
 ```

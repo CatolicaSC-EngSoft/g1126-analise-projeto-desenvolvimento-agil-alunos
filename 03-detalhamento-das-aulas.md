@@ -23,6 +23,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 **Produção contínua (todos os grupos)**
 - Formar o grupo (3 a 5 pessoas) e receber o caso.
 - Criar o repositório público do grupo a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o **fluxo de Pull Request**. O banco é SQLite, embutido no Node: rodar `npm run db:migrar` e pronto, nada a instalar.
+- Registrar a **evidência do encontro** no repositório: enunciado do problema e lista de incertezas nas seções `## Problema central` e `## Incertezas` de `docs/analise.md`, que já vem no template.
 
 **Trabalhos em sala (em grupo — fazer as três)**
 1. Reescrever um "pedido de cliente" mal formulado, separando o problema real da solução que já vinha embutida.
@@ -119,7 +120,7 @@ Prova individual com consulta autoproduzida, sem IA. Entrega do **Trabalho 1 (an
 - Estrutura de um ADR enxuto: contexto, alternativas, decisão, consequências.
 - Por que registrar a decisão, e não só o resultado.
 - Consequências positivas e negativas de uma escolha.
-- Quando uma decisão merece virar ADR — o caso da disciplina: **migrar de SQLite para PostgreSQL** (alternativas, consequências, riscos, como validar).
+- Quando uma decisão merece virar ADR — os dois casos da disciplina: a **escolha da stack** e **migrar de SQLite para PostgreSQL** (alternativas, consequências, riscos, como validar).
 - Revisitar decisões quando o contexto muda.
 
 **Produção contínua (todos os grupos)**
@@ -169,7 +170,7 @@ Na Unidade 3 não há menu de opções: o trabalho de sala **é** a construção
 
 - Evoluir o produto com **uma nova história priorizada**, integrada por PR revisado e com CI verde.
 - Escrever a **definição de pronto** do grupo e registrá-la no `README.md` do repositório.
-- Subir o PostgreSQL local (`docker compose up -d`) e preparar a migração decidida no ADR da Unidade 2.
+- Preparar o ambiente do **PostgreSQL** escolhido no ADR da Unidade 2 e iniciar a migração (instalação local, contêiner ou serviço gerenciado — o caminho é do grupo).
 - Se usar IA para gerar código, registrar no PR o que foi mantido, o que mudou e por quê.
 
 **Entrega do encontro:** o PR da história (aberto ou integrado) e a definição de pronto no repositório.
