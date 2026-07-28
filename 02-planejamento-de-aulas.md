@@ -6,7 +6,7 @@
 
 Turma de **6ª fase de Engenharia de Software**, com **Desenvolvimento, Testes, Programação server-side e Banco de Dados já cursados**. Isso define o que a disciplina **não** faz: não ensina a programar, não ensina o que é um teste automatizado, não ensina SQL nem versionamento básico.
 
-O que ela agrega sobre essa base: **analisar o problema antes de codificar, decidir com informação incompleta, justificar a escolha, verificar o resultado e adaptar quando o contexto muda**. A stack (Node, Express, Vitest, SQLite, PostgreSQL) é território conhecido — usada como meio, não como conteúdo. É por isso que o `template-repo` entrega a infraestrutura pronta: o tempo de aula não deve ser gasto em configuração, e sim em decisão.
+O que ela agrega sobre essa base: **analisar o problema antes de codificar, decidir com informação incompleta, justificar a escolha, verificar o resultado e adaptar quando o contexto muda**. A stack (Node, Express, Vitest, SQLite, PostgreSQL) é território conhecido — usada como meio, não como conteúdo. É por isso que o repositório template entrega a infraestrutura pronta: o tempo de aula não deve ser gasto em configuração, e sim em decisão.
 
 Consequência prática para a condução: quando um bloco de conteúdo parecer básico para a turma, encurte a exposição e alongue a produção. O risco nesta turma não é a dificuldade técnica — é a pressa de codificar antes de entender o problema.
 
@@ -34,7 +34,7 @@ Assim, os três trabalhos maiores deixam de ser "documento, documento, produto" 
 
 **Caso.** Todos os grupos trabalham o mesmo caso — **Prato Cheio** (ver `caso-alunos.md`).
 
-**Stack preferencial: Node.js 22+ · Express · Vitest.** É a stack do `template-repo/`, que já entrega estrutura, interface, rota de saúde, CI configurado e um teste passando, com as regras de negócio da história zero em stubs e os critérios de aceite como `it.todo`. O banco evolui junto com o produto: **SQLite** (módulo `node:sqlite`, embutido — nada a instalar) nas Unidades 1 e 2, e **PostgreSQL** na Unidade 3, após uma refatoração decidida por ADR.
+**Stack preferencial: Node.js 22+ · Express · Vitest.** É a stack do repositório template [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio), que já entrega estrutura, interface, rota de saúde, CI configurado e um teste passando, com as regras de negócio da história zero em stubs e os critérios de aceite como `it.todo`. O banco evolui junto com o produto: **SQLite** (módulo `node:sqlite`, embutido — nada a instalar) nas Unidades 1 e 2, e **PostgreSQL** na Unidade 3, após uma refatoração decidida por ADR.
 
 **Outra stack é permitida, desde que justificada.** O grupo que quiser usar outra linguagem ou framework registra um **ADR** (`docs/adr/0001-escolha-da-stack.md`), entregue no **Trabalho 1**, com contexto, alternativas, decisão, consequências e riscos assumidos. Escolher a stack é, ela mesma, uma decisão de projeto — e a disciplina avalia decisões justificadas.
 

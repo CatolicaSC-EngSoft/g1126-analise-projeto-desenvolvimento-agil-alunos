@@ -19,11 +19,10 @@ A disciplina é orientada ao desenvolvimento da capacidade de **analisar problem
 | [`slides/`](slides/) | Decks das aulas e a estrutura padrão de apresentação. |
 | [`aulas/`](aulas/) | Um arquivo por encontro (16), derivado do detalhamento: foco, nível de IA, evidência, produção contínua e trabalhos de sala. |
 | [`trabalhos/`](trabalhos/) | Um arquivo por trabalho maior (3), com entregáveis, de onde vem cada aula e critérios de aceite. |
-| [`template-repo/`](template-repo/) | Base que os grupos clonam na Aula 1: estrutura, interface, CI, teste de saúde passando e a história zero em stubs. |
 
 ## O caso e o template
 
-Todos os grupos trabalham o mesmo caso — **Prato Cheio**, uma plataforma que conecta doadores de alimentos excedentes a ONGs ([`caso-alunos.md`](caso-alunos.md)) — na stack **preferencial** **Node.js 22+ · Express · Vitest**, com **SQLite** nas Unidades 1 e 2 e **PostgreSQL** na Unidade 3 (após refatoração). Outra stack é permitida com **ADR justificando**, desde que garanta CI verde, rota de saúde, testes por um comando e banco relacional. O [`template-repo/`](template-repo/) é a base que os grupos clonam na Aula 1: estrutura, interface, CI do GitHub Actions e um teste passando, com a história zero em stubs.
+Todos os grupos trabalham o mesmo caso — **Prato Cheio**, uma plataforma que conecta doadores de alimentos excedentes a ONGs ([`caso-alunos.md`](caso-alunos.md)) — na stack **preferencial** **Node.js 22+ · Express · Vitest**, com **SQLite** nas Unidades 1 e 2 e **PostgreSQL** na Unidade 3 (após refatoração). Outra stack é permitida com **ADR justificando**, desde que garanta CI verde, rota de saúde, testes por um comando e banco relacional. O template vive em repositório próprio — [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio) — e é dele que cada grupo cria o seu na Aula 1, pelo botão **Use this template**: estrutura, interface, CI do GitHub Actions e um teste passando, com a história zero em stubs.
 
 ## Modelo de avaliação
 

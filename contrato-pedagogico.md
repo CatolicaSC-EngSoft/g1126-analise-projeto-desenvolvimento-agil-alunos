@@ -39,7 +39,7 @@ Seu grupo constrói **um único produto** para esse caso, entregue em três iter
 
 O software roda desde a Unidade 1. Não existe "entregar tudo na última semana".
 
-**Stack preferencial:** **Node.js 22+ · Express · Vitest**, a partir do `template-repo`. A conexão com o banco, o schema e o CI já vêm prontos — vocês implementam o SQL de acesso e as regras de negócio.
+**Stack preferencial:** **Node.js 22+ · Express · Vitest**, a partir do repositório template [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio) (botão **Use this template**). A conexão com o banco, o schema e o CI já vêm prontos — vocês implementam o SQL de acesso e as regras de negócio.
 
 **Outra stack é permitida se vocês justificarem.** Registrem um ADR (`docs/adr/0001-escolha-da-stack.md`) na entrega do Trabalho 1, com alternativas, consequências e riscos. Em qualquer stack, o produto precisa garantir: repositório público com **CI verde**, uma **rota de saúde** que responde, **testes automatizados** rodando por um comando, os **três comandos** (instalar, testar, executar) documentados no README, e **banco relacional** migrado para PostgreSQL na Unidade 3.
 

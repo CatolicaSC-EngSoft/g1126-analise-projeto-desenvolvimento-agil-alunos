@@ -1,6 +1,6 @@
 # Trabalhos Maiores — índice
 
-Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pessoas**, entregues no dia da prova. Não são documentos isolados: são **três iterações de um mesmo produto vivo**, construído sobre o caso [Prato Cheio](caso-alunos.md) a partir do [`template-repo/`](template-repo/).
+Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pessoas**, entregues no dia da prova. Não são documentos isolados: são **três iterações de um mesmo produto vivo**, construído sobre o caso [Prato Cheio](caso-alunos.md) a partir do [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio).
 
 | Trabalho | Unidade | Entrega | O que é |
 |---|---|---|---|
@@ -11,7 +11,7 @@ Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pesso
 ## Regras comuns
 
 - **Mesmo caso, mesmo repositório público no GitHub** nas três iterações; cada decisão da Análise reaparece justificada no Projeto e implementada na Construção.
-- **Stack preferencial:** Node.js 22+ · Express · Vitest, partindo do `template-repo/` (conexão, schema e CI prontos). Banco: **SQLite** nas Unidades 1 e 2, **PostgreSQL** na Unidade 3 após a refatoração.
+- **Stack preferencial:** Node.js 22+ · Express · Vitest, partindo do repositório template [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio) (conexão, schema e CI prontos). Banco: **SQLite** nas Unidades 1 e 2, **PostgreSQL** na Unidade 3 após a refatoração.
 - **Outra stack é permitida com ADR justificando** (`docs/adr/0001-escolha-da-stack.md`, entregue no Trabalho 1). Em qualquer stack valem os mesmos compromissos: repositório público, CI verde, rota de saúde, testes por um comando, três comandos documentados no README e banco relacional migrado para PostgreSQL na Unidade 3.
 - **CI verde** (GitHub Actions) em todas as entregas; a partir da Unidade 2, toda mudança relevante entra por **Pull Request revisado** por outro integrante.
 - **Decisão vale mais que volume:** problema, evidências, alternativas, decisão, justificativa, riscos, limitações e critérios de validação. Documento de até **4 páginas**.

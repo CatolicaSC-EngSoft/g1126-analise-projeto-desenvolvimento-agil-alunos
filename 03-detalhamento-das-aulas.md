@@ -22,7 +22,7 @@ Para cada encontro de conteúdo: foco, 3–5 pontos a abordar na exposição (~7
 
 **Produção contínua (todos os grupos)**
 - Formar o grupo (3 a 5 pessoas) e receber o caso.
-- Criar o repositório público do grupo a partir do `template-repo/`, confirmar o **CI verde** no GitHub Actions e testar o **fluxo de Pull Request**. O banco é SQLite, embutido no Node: rodar `npm run db:migrar` e pronto, nada a instalar.
+- Criar o repositório público do grupo pelo botão **Use this template** em [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio), confirmar o **CI verde** no GitHub Actions e testar o **fluxo de Pull Request**. O banco é SQLite, embutido no Node: rodar `npm run db:migrar` e pronto, nada a instalar.
 - Registrar a **evidência do encontro** no repositório: enunciado do problema e lista de incertezas nas seções `## Problema central` e `## Incertezas` de `docs/analise.md`, que já vem no template.
 
 **Trabalhos em sala (em grupo — fazer as três)**

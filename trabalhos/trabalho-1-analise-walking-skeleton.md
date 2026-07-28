@@ -33,7 +33,7 @@ Analisar um problema e levantar requisitos com foco em impacto (*outcome* vs *ou
 
 ## Estrutura do repositório
 
-Parta do `template-repo/` (já inclui CI, interface e testes). A estrutura esperada:
+Parta de [`g1126-template-prato-cheio`](https://github.com/CatolicaSC-EngSoft/g1126-template-prato-cheio) (já inclui CI, interface e testes), criado com **Use this template**. A estrutura esperada:
 ```
 README.md                      visão do produto + como rodar
 docs/analise.md                o documento de análise
