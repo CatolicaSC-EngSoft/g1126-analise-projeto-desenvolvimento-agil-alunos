@@ -33,6 +33,8 @@ Três checagens, e as três são de bloqueio — quem não passar nelas não con
 
 Devolver a Aula 2 em uma frase: *vocês descobriram de quem vem cada exigência; hoje ela vira uma frase que dá para construir e testar.*
 
+**Um detalhe que vale notar agora, antes de qualquer coisa.** A regra que vocês classificaram como vinda "da fala" — *"doação aceita não fica disponível para outra ONG"* — já está no repositório de vocês, esperando, como um dos cinco `it.todo` de `tests/doacoes.test.js`. A análise que vocês fizeram no papel e o código do template já se encontram. E a mesma Aula 2 mostrou que **falta linha de base** para o objetivo de impacto — é por isso que a história zero de hoje vai precisar de mais do que esses cinco `it.todo`: vai precisar gravar os instantes da publicação e do aceite (Tópico 5).
+
 ## Objetivo da aula
 
 Sair do encontro com cinco histórias que cabem numa iteração, cada uma com a letra do INVEST que falha **e a ação corretiva**, e com a história zero escolhida — sabendo dizer o que ficou **de fora** da fatia e por quê.
@@ -103,11 +105,11 @@ A primeira fatia **não se escolhe por valor — se escolhe por risco e informa�
 - Registrar as **5 histórias** na tabela `## Histórias de usuário` de `docs/analise.md`, com duas informações por linha: a **letra do INVEST que falha** e a **ação corretiva**.
 - Acrescentar as **3 fatias** da história gigante como linhas da mesma tabela.
 - Marcar a **história zero** com `★` na coluna `#` e escrever, logo abaixo da tabela, três linhas: **por que ela**, **o que ficou fora** e **por quê**.
-- Preencher `## Uso de IA`: o que a IA gerou, o que vocês mudaram e **por quê** — incluindo qualquer regra que ela tenha inventado e quem decide sobre ela.
+- Preencher `## Uso de IA`, identificando **pelo menos 3 histórias pelo número (#) na tabela**: o que a IA gerou, o que vocês mudaram e **por quê** — incluindo qualquer regra que ela tenha inventado e quem decide sobre ela.
 - Rodar `npm run db:migrar` e confirmar o **CI verde**; cada integrante faz ao menos **um commit** hoje.
 - Escrever a página de hoje da **consulta manuscrita**: os quatro erros com os sintomas, as seis letras do INVEST com a ação de cada, os cinco cortes do SPIDR e os três critérios da história zero.
 
-**Entrega do encontro (0,25):** o link do commit com a tabela `## Histórias de usuário` preenchida (5 histórias + 3 fatias + a história zero marcada e justificada) e a seção `## Uso de IA`. Enunciado e prazo em `enunciado-atividade-ava.md`. Correção binária: entregou no prazo e no formato, pontuou.
+**Entrega do encontro (0,25):** o link do commit com a tabela `## Histórias de usuário` preenchida (5 histórias + 3 fatias + a história zero marcada e justificada) e a seção `## Uso de IA` com pelo menos 3 histórias identificadas por número. Enunciado e prazo em `enunciado-atividade-ava.md`. Correção binária: entregou no prazo e no formato, pontuou.
 
 > **Sem mudança no template hoje.** A seção `## Histórias de usuário` e a `## Uso de IA` já existem no `docs/analise.md` que veio do template — não há nada a acrescentar à mão. A marcação `★` e as três linhas de justificativa da história zero vão **dentro** dessas seções, não em seção nova.
 >
@@ -135,7 +137,7 @@ Pegar uma história gigante e quebrá-la em **3 menores**, cada uma demonstráve
 Gerar com IA, aplicar o **protocolo de três passos** e corrigir no mínimo três, registrando o que mudou e por quê.
 
 - *Entrega:* as histórias corrigidas na tabela + a seção `## Uso de IA` preenchida.
-- *Checklist:* cada correção diz **o que mudou e por quê** · pelo menos uma **regra inventada** pela IA está identificada, com o dono da decisão · está registrado se alguma restrição do caso (celular, conexão instável, um bairro, orçamento zero) sumiu do que ela gerou.
+- *Checklist:* as (pelo menos) três correções estão **identificadas pelo número (#) da tabela** — `## Uso de IA` não é um resumo geral · cada correção diz **o que mudou e por quê** · pelo menos uma **regra inventada** pela IA está identificada, com o dono da decisão · está registrado se alguma restrição do caso (celular, conexão instável, um bairro, orçamento zero) sumiu do que ela gerou.
 - *Armadilha frequente:* registrar "melhoramos a redação". Isso não é registro — e na defesa não sustenta a pergunta "de onde veio essa regra?".
 
 ## Enquanto circula pelos grupos

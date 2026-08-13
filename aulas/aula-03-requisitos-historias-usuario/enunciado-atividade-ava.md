@@ -37,13 +37,15 @@ A história zero está praticamente dada: está no caso e nos cinco `it.todo` de
 
 ### 3. `## Uso de IA`
 
-Hoje é a primeira atividade com **IA como colaboradora**, e esta seção passa a existir de verdade. Para cada coisa que veio da IA e ficou:
+Hoje é a primeira atividade com **IA como colaboradora**, e esta seção passa a existir de verdade. Ela é o registro do Trabalho 3 (gerar histórias com IA e corrigir pelo menos 3) — **não é** um resumo geral do que a IA ajudou; é a lista de **quais linhas da tabela** vieram dela.
+
+Identifiquem **pelo menos 3 histórias, pelo número (#) na tabela `## Histórias de usuário`**, e para cada uma:
 
 - **o que ela gerou;**
 - **o que vocês mudaram — e por quê;**
 - **qual regra de negócio ela inventou** (há quase sempre uma), e **quem decide** sobre ela.
 
-"Melhoramos a redação" não é registro. E se alguma restrição do caso — celular, conexão instável, um bairro, orçamento próximo de zero — sumiu do que ela gerou, isso também vai anotado: é o erro mais caro dela.
+"Melhoramos a redação" não é registro, e citar a IA sem dizer **qual história da tabela** também não é. E se alguma restrição do caso — celular, conexão instável, um bairro, orçamento próximo de zero — sumiu do que ela gerou, isso também vai anotado: é o erro mais caro dela.
 
 ---
 
@@ -72,7 +74,7 @@ Cada integrante entrega. A produção é do grupo; a entrega é individual, porq
 
 **Binário: entregou no prazo e no formato, pontuou.** Não há nota parcial e não há avaliação de mérito aqui.
 
-Perde o ponto quem: entrega fora do prazo · entrega a tabela sem a coluna de ação corretiva · não marca a história zero · não escreve o que ficou fora da fatia · deixa `## Uso de IA` em branco · não tem commit próprio de hoje · manda o link do repositório sem o link do commit.
+Perde o ponto quem: entrega fora do prazo · entrega a tabela sem a coluna de ação corretiva · não marca a história zero · não escreve o que ficou fora da fatia · deixa `## Uso de IA` em branco **ou nele não identifica pelo menos 3 histórias por número da tabela** · não tem commit próprio de hoje · manda o link do repositório sem o link do commit.
 
 **A qualidade destas seções é avaliada depois**, e vale muito mais: a história zero é o que vocês vão implementar na Aula 4, e ela é o núcleo do **Trabalho 1** (2,0 do artefato). Na **defesa individual** (1,0) em **03/09**, cada integrante responde por **qualquer** história da tabela — inclusive as que não escreveu e as que a IA escreveu primeiro.
 
