@@ -33,6 +33,8 @@ Três checagens, e as três são de bloqueio — quem não passar nelas não con
 
 Devolver a Aula 2 em uma frase: *vocês descobriram de quem vem cada exigência; hoje ela vira uma frase que dá para construir e testar.*
 
+**Um detalhe que vale notar agora, antes de qualquer coisa.** A regra que vocês classificaram como vinda "da fala" — *"doação aceita não fica disponível para outra ONG"* — já está no repositório de vocês, esperando, como um dos cinco `it.todo` de `tests/doacoes.test.js`. A análise que vocês fizeram no papel e o código do template já se encontram. E a mesma Aula 2 mostrou que **falta linha de base** para o objetivo de impacto — é por isso que a história zero de hoje vai precisar de mais do que esses cinco `it.todo`: vai precisar gravar os instantes da publicação e do aceite (Tópico 5).
+
 ## Objetivo da aula
 
 Sair do encontro com cinco histórias que cabem numa iteração, cada uma com a letra do INVEST que falha **e a ação corretiva**, e com a história zero escolhida — sabendo dizer o que ficou **de fora** da fatia e por quê.
