@@ -20,8 +20,8 @@ Percorrer o documento `contrato-pedagogico.md` com a turma, ponto a ponto:
 - **A defesa individual** — como o aluno ganha o seu 1,0: explicar uma decisão (0,4), responder sobre outra parte do trabalho (0,3), modificar ao vivo (0,3). Explicar o gatilho de contribuição no repositório.
 - **A consulta autoconstruída** — manuscrita, extensão a critério do aluno, única permitida; por isso as provas são de aplicação.
 - **Os três níveis de IA** — sem IA, para consulta, colaboradora; a responsabilidade é sempre do aluno; não há uso de detectores.
-- **Grupo, repositório e Pull Request** — grupos de 3 a 5, CI verde, PR revisado a partir da Unidade 2, retrospectivas nas aulas 4, 9 e 14.
-- **Presença, entregas e as quatro datas que não mudam** — aulas 5, 10, 15 e 16.
+- **Grupo, repositório e Pull Request** — grupos de 3 a 5, CI verde, PR revisado a partir da Unidade 2, retrospectivas nas aulas 4, 8 e 13.
+- **Presença, entregas e as quatro datas que não mudam** — aulas 5, 9, 14 e 15.
 - **As duas vias do contrato** — ler em voz alta os compromissos do professor e os do aluno. Fechar o acordo.
 - **A atividade de aceite** — abrir o Teams na hora e mostrar onde entregam: o aceite, os membros do time e o link do repositório público.
 

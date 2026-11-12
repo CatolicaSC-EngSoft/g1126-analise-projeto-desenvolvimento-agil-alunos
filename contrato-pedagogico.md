@@ -55,7 +55,7 @@ Cada unidade vale **10 pontos**:
 |---|:--:|---|
 | Prova com consulta | 6,0 | Individual, **sem IA**, com a consulta que você mesmo escreveu à mão |
 | Trabalho maior | 3,0 | **2,0** do artefato do grupo + **1,0** da sua defesa individual |
-| Atividades de aula | 1,0 | **0,25** por encontro de conteúdo, correção binária: entregou no prazo e no formato, pontuou |
+| Atividades de aula | 1,0 | **0,25** por entrega, correção binária: entregou no prazo e no formato, pontuou. Em geral é uma entrega por encontro de conteúdo; a **Aula 8** reúne dois assuntos e tem **duas entregas** (0,50 no total), de modo que cada unidade soma 1,0 |
 
 ### A defesa individual (1,0) — como você ganha a sua parte
 
@@ -94,15 +94,15 @@ A nota final é a **média simples das três unidades**: (Unidade 1 + Unidade 2 
 
 ### Prova substitutiva
 
-Aplicada na **Aula 16**, cumulativa (cobre as três unidades), sem IA, com as consultas das três unidades. Substitui a **nota de prova mais baixa**, valendo o resultado obtido; a unidade correspondente é recalculada antes da média. Substitui **somente nota de prova** — não trabalho, não atividades.
+Aplicada na **Aula 15**, cumulativa (cobre as três unidades), sem IA, com as consultas das três unidades. Substitui a **nota de prova mais baixa**, valendo o resultado obtido; a unidade correspondente é recalculada antes da média. Substitui **somente nota de prova** — não trabalho, não atividades.
 
 ### Se você faltar a uma prova
 
 | Situação | O que acontece |
 |---|---|
-| Falta **sem** justificativa legal | Nota zero na prova. A recuperação é a **substitutiva** (Aula 16) — que deixa de servir para melhorar a nota mais baixa e passa a repor a prova perdida. |
-| Falta **com** atestado válido (ou documento equivalente com validade legal) | Você faz a prova perdida **no dia da próxima prova**, junto com ela. Exemplo: faltou à Prova 1 → na Aula 10 faz a Prova 1 e a Prova 2. |
-| Falta à **Prova 3** com atestado | A "próxima prova" é a Aula 16: você faz a Prova 3 nessa data, no lugar da substitutiva. |
+| Falta **sem** justificativa legal | Nota zero na prova. A recuperação é a **substitutiva** (Aula 15) — que deixa de servir para melhorar a nota mais baixa e passa a repor a prova perdida. |
+| Falta **com** atestado válido (ou documento equivalente com validade legal) | Você faz a prova perdida **no dia da próxima prova**, junto com ela. Exemplo: faltou à Prova 1 → na Aula 9 faz a Prova 1 e a Prova 2. |
+| Falta à **Prova 3** com atestado | A "próxima prova" é a Aula 15: você faz a Prova 3 nessa data, no lugar da substitutiva. |
 | Falta à **substitutiva** | **Não há reposição.** Não existe segunda chamada da substitutiva. |
 
 Quem falta a duas provas sem justificativa recupera apenas uma delas.
@@ -145,7 +145,7 @@ Se um grupo perder integrantes ao longo do semestre (desistência, trancamento, 
 
 **Quem entra depois** (transferência, matrícula tardia) **é alocado no grupo com menos integrantes**. Assume uma história do backlog na iteração corrente, e a defesa individual passa a valer a partir da unidade em que entrou — não responde pelas unidades anteriores à sua entrada.
 
-Nas aulas 4, 9 e 14 o grupo faz uma **retrospectiva** de meia página e uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos). A autoavaliação não entra no cálculo da nota — ela orienta as perguntas que eu faço na defesa individual.
+Nas aulas 4, 8 e 13 o grupo faz uma **retrospectiva** de meia página e uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos). A autoavaliação não entra no cálculo da nota — ela orienta as perguntas que eu faço na defesa individual.
 
 ## 8. Antes da primeira aula
 
@@ -159,7 +159,7 @@ Só isso. Na Aula 1 o projeto sobe e o CI fica verde **sem precisar de banco de 
 
 ### PostgreSQL: necessário a partir da Unidade 3
 
-Até a Unidade 2 o banco é **SQLite**, embutido no Node — nada a instalar. Na **Unidade 3 (Aula 11)** o grupo passa a precisar de um **PostgreSQL acessível**, para executar a refatoração decidida no ADR da Unidade 2.
+Até a Unidade 2 o banco é **SQLite**, embutido no Node — nada a instalar. Na **Unidade 3 (Aula 10)** o grupo passa a precisar de um **PostgreSQL acessível**, para executar a refatoração decidida no ADR da Unidade 2.
 
 **Como subir esse banco é escolha do grupo**, e faz parte da decisão registrada no ADR: instalar o PostgreSQL na máquina, subir um contêiner, usar o **GitHub Codespaces** (roda tudo no navegador) ou um **serviço gerenciado gratuito** (Neon, Supabase, Render). O que a disciplina exige é o banco alcançável por `DATABASE_URL`, o schema migrado por `npm run db:migrar` e o CI verde.
 
@@ -176,11 +176,11 @@ Datas que não mudam:
 | Data | Encontro | O que acontece |
 |---|---|---|
 | 03/09 | Aula 5 | Prova 1 + entrega do Trabalho 1 (análise + walking skeleton) |
-| 15/10 | Aula 10 | Prova 2 + entrega do Trabalho 2 (projeto + incremento via PR) |
-| 26/11 | Aula 15 | Prova 3 + entrega do Trabalho 3 (produto refatorado) |
-| 03/12 | Aula 16 | Prova substitutiva cumulativa |
+| 22/10 | Aula 9 | Prova 2 + entrega do Trabalho 2 (projeto + incremento via PR) |
+| 03/12 | Aula 14 | Prova 3 + entrega do Trabalho 3 (produto refatorado) |
+| 10/12 | Aula 15 | Prova substitutiva cumulativa |
 
-Há também **três noites de trabalho remoto** — **27/08, 08/10 e 19/11** —, sempre na quinta anterior a cada entrega. Nessas noites não há exposição: vocês trabalham no projeto à distância, no horário da aula, e eu fico disponível online para dúvidas. A evidência é o próprio repositório: os commits e PRs dessa noite contam.
+Há também **três noites de trabalho remoto** — **27/08, 15/10 e 26/11** —, sempre na quinta anterior a cada entrega. Nessas noites não há exposição: vocês trabalham no projeto à distância, no horário da aula, e eu fico disponível online para dúvidas. A evidência é o próprio repositório: os commits e PRs dessa noite contam.
 
 ## 10. Como entregar
 
@@ -191,8 +191,8 @@ Para os **trabalhos maiores**, além da entrega no Teams o grupo cria no GitHub 
 | Trabalho | Branch da entrega |
 |---|---|
 | Trabalho 1 (Aula 5) | `entrega-1` |
-| Trabalho 2 (Aula 10) | `entrega-2` |
-| Trabalho 3 (Aula 15) | `entrega-3` |
+| Trabalho 2 (Aula 9) | `entrega-2` |
+| Trabalho 3 (Aula 14) | `entrega-3` |
 
 ```bash
 git checkout -b entrega-1

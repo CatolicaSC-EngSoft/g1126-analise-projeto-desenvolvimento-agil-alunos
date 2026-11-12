@@ -1,6 +1,6 @@
 # Análise, Projeto e Desenvolvimento Ágil
 
-Materiais de condução da disciplina **Análise, Projeto e Desenvolvimento Ágil**: premissas, planejamento e detalhamento dos 16 encontros.
+Materiais de condução da disciplina **Análise, Projeto e Desenvolvimento Ágil**: premissas, planejamento e detalhamento dos 15 encontros.
 
 A disciplina é orientada ao desenvolvimento da capacidade de **analisar problemas, projetar soluções e construir software** de forma incremental, crítica e responsável. O foco não é apenas ensinar cerimônias ágeis, mas formar uma maneira estruturada de pensar e atuar como engenheiro de software. A inteligência artificial é integrada — não proibida —, mas o estudante permanece responsável por verificar, testar, corrigir e defender o que produz.
 
@@ -15,9 +15,9 @@ A disciplina é orientada ao desenvolvimento da capacidade de **analisar problem
 | [`trabalhos-maiores.md`](trabalhos-maiores.md) | Os três trabalhos maiores como iterações de um mesmo produto vivo, com critérios de aceite. |
 | [`caso-alunos.md`](caso-alunos.md) | O caso da disciplina ("Prato Cheio"), entregue aos grupos na Aula 1. |
 | [`plano-de-aula.md`](plano-de-aula.md) | Plano de ensino oficial da disciplina. |
-| [`calendario-2026-2.md`](calendario-2026-2.md) | As 21 quintas-feiras do semestre: 16 encontros, 3 noites de trabalho remoto e 2 reservas. |
+| [`calendario-2026-2.md`](calendario-2026-2.md) | As 21 quintas-feiras do semestre: 15 encontros, 3 noites de trabalho remoto, 2 quintas sem aula e 1 reserva. |
 | [`slides/`](slides/) | Decks das aulas e a estrutura padrão de apresentação. |
-| [`aulas/`](aulas/) | Um arquivo por encontro (16), derivado do detalhamento: foco, nível de IA, evidência, produção contínua e trabalhos de sala. |
+| [`aulas/`](aulas/) | Um arquivo por encontro (15), derivado do detalhamento: foco, nível de IA, evidência, produção contínua e trabalhos de sala. |
 | [`trabalhos/`](trabalhos/) | Um arquivo por trabalho maior (3), com entregáveis, de onde vem cada aula e critérios de aceite. |
 
 ## O caso e o template
@@ -32,7 +32,7 @@ Três ciclos — **Análise → Projeto → Construção** — cada um com 10 po
 |------|:---:|--------|
 | Prova com consulta | 6,0 | Individual, sem IA, consulta autoconstruída em aula |
 | Trabalho maior | 3,0 | Em grupo (3 a 5 pessoas), iteração do produto vivo: **2,0 artefato do grupo + 1,0 defesa individual** |
-| Atividades de aula | 1,0 | 0,25 por encontro de conteúdo; correção objetiva e binária (prazo + formato) |
+| Atividades de aula | 1,0 | 0,25 por entrega (a Aula 8 tem duas); correção objetiva e binária (prazo + formato) |
 
 **Nota final = média simples das três unidades.** A prova substitutiva, cumulativa e sem IA, substitui a nota de prova mais baixa.
 
