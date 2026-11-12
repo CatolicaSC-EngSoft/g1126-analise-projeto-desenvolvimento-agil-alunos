@@ -52,7 +52,7 @@ Sair do encontro com cinco histórias que cabem numa iteração, cada uma com a 
 - *O ponto que sustenta o resto da aula:* aquela qualidade **produziu uma função** (gravar o horário do evento), e essa função protege a medição do objetivo da Aula 2. Se o voluntário confirma de casa duas horas depois, a mediana até a coleta fica errada e a análise decide sobre um número falso.
 
 **2. Anatomia da história: cartão, conversa, confirmação.**
-A história não é um requisito curto — é a **promessa de uma conversa**. O cartão lembra, a conversa esclarece, a confirmação verifica. E só a confirmação sobra depois: ela vira critério de aceite na Aula 4 e teste na Aula 12.
+A história não é um requisito curto — é a **promessa de uma conversa**. O cartão lembra, a conversa esclarece, a confirmação verifica. E só a confirmação sobra depois: ela vira critério de aceite na Aula 4 e teste na Aula 11.
 
 - *As três partes:* **Como** um stakeholder do mapa (com nome, não "usuário") · **quero** um comportamento que alguém fora do time percebe · **para** um objetivo de impacto da Aula 2 ou uma perda concreta evitada.
 - *O teste do "para":* se ele repete o "quero" com outras palavras, a história não tem valor declarado — e provavelmente é tarefa. *"Como doador, quero cadastrar uma doação, para que a doação fique cadastrada"* é a forma pura do erro.

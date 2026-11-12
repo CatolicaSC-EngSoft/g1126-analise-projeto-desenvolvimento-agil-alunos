@@ -5,8 +5,8 @@ Três trabalhos, um por unidade (**3,0 pontos cada**), **em grupo de 3 a 5 pesso
 | Trabalho | Unidade | Entrega | O que é |
 |---|---|---|---|
 | [Trabalho 1](trabalhos/trabalho-1-analise-walking-skeleton.md) | 1 — Análise | Aula 5 | Documento de análise + **walking skeleton** rodando com CI verde |
-| [Trabalho 2](trabalhos/trabalho-2-projeto-incremento.md) | 2 — Projeto | Aula 10 | Documento de projeto + ADRs + **incremento integrado via PR** revisado |
-| [Trabalho 3](trabalhos/trabalho-3-produto-refatoracao.md) | 3 — Construção | Aula 15 | Produto evoluído + **refatoração** protegida por testes + validação |
+| [Trabalho 2](trabalhos/trabalho-2-projeto-incremento.md) | 2 — Projeto | Aula 9 | Documento de projeto + ADRs + **incremento integrado via PR** revisado |
+| [Trabalho 3](trabalhos/trabalho-3-produto-refatoracao.md) | 3 — Construção | Aula 14 | Produto evoluído + **refatoração** protegida por testes + validação |
 
 ## Regras comuns
 

@@ -52,8 +52,8 @@ Assim, os três trabalhos maiores deixam de ser "documento, documento, produto" 
 
 **Pré-requisitos, em duas etapas** — para a Aula 1 não virar sessão de instalação:
 
-- **Aulas 1 a 10:** apenas **Node.js 22+** e conta no GitHub. O SQLite é embutido no Node, então o walking skeleton roda sem instalar banco nenhum.
-- **Unidade 3 (a partir da Aula 11):** um **PostgreSQL acessível**, para a refatoração. São mais de dois meses de margem para providenciar.
+- **Aulas 1 a 9:** apenas **Node.js 22+** e conta no GitHub. O SQLite é embutido no Node, então o walking skeleton roda sem instalar banco nenhum.
+- **Unidade 3 (a partir da Aula 10):** um **PostgreSQL acessível**, para a refatoração. São mais de dois meses de margem para providenciar.
 
 Como subir esse PostgreSQL é **decisão do grupo**, comparada no ADR da Unidade 2: instalar na máquina, subir um contêiner, usar **GitHub Codespaces** ou um **serviço gerenciado gratuito** (Neon, Supabase, Render). A disciplina não impõe o caminho — exige o banco alcançável por `DATABASE_URL`, o schema migrado e o CI verde.
 
@@ -122,7 +122,7 @@ Detalhes por trabalho em `trabalhos/`.
 
 ## 8. Retrospectivas
 
-O encontro que **antecede cada prova** (aulas 4, 9 e 14) inclui uma **retrospectiva** curta da iteração: o que decidimos, o que funcionou, o que mudaríamos, próximos passos.
+O encontro que **antecede cada prova** (aulas 4, 8 e 13) inclui uma **retrospectiva** curta da iteração: o que decidimos, o que funcionou, o que mudaríamos, próximos passos.
 
 A retrospectiva inclui uma **autoavaliação de contribuição por pares** (distribuição de 100 pontos entre os integrantes). Ela é usada como **sinal, não como cálculo**: em grupos pequenos a distribuição tende à reciprocidade ("20/20/20/20/20"), então entrar na fórmula premiaria o combinado. Quando um grupo destoa desse padrão, é ali que o professor direciona as perguntas da defesa individual.
 
@@ -130,7 +130,7 @@ A retrospectiva inclui uma **autoavaliação de contribuição por pares** (dist
 
 Pequena entrega ou demonstração a cada encontro de conteúdo, com **correção objetiva** e binária: entregou no prazo e no formato, pontuou; não entregou, não pontuou.
 
-Cada unidade tem 4 encontros de conteúdo, então **cada atividade vale 0,25**. As entregas são feitas **pelo Teams**, com data e hora, e valem **independentemente de presença** — a presença é registrada separadamente, por chamada.
+Cada unidade soma **4 entregas**, e **cada entrega vale 0,25**. As Unidades 1 e 3 têm 4 encontros de conteúdo, uma entrega por encontro. A Unidade 2 tem 3 encontros de conteúdo (Aulas 6, 7 e 8); a **Aula 8**, que reúne ADR, não-funcionais e validação do projeto em um só encontro, tem **duas entregas de 0,25** (ADRs e validação), de modo que a unidade continua somando 1,0. As entregas são feitas **pelo Teams**, com data e hora, e valem **independentemente de presença** — a presença é registrada separadamente, por chamada.
 
 Na Aula 1 há uma entrega específica, sem nota: a atividade **"Aceite do contrato pedagógico"** (ver `contrato-pedagogico.md`), em que cada aluno aceita o contrato e informa os **membros do time** e o **link do repositório público no GitHub**. Prazo: até o fim da Aula 2.
 
@@ -150,9 +150,9 @@ Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); *
 
 | Situação | Regra |
 |---|---|
-| Falta sem justificativa | Zero na prova; a recuperação é a substitutiva (Aula 16), que passa a repor em vez de melhorar |
-| Falta com atestado válido | Faz a prova perdida **no dia da próxima prova** (faltou à Prova 1 → faz Prova 1 e Prova 2 na Aula 10) |
-| Falta à Prova 3 com atestado | Faz a Prova 3 na Aula 16, no lugar da substitutiva |
+| Falta sem justificativa | Zero na prova; a recuperação é a substitutiva (Aula 15), que passa a repor em vez de melhorar |
+| Falta com atestado válido | Faz a prova perdida **no dia da próxima prova** (faltou à Prova 1 → faz Prova 1 e Prova 2 na Aula 9) |
+| Falta à Prova 3 com atestado | Faz a Prova 3 na Aula 15, no lugar da substitutiva |
 | Falta à substitutiva | **Sem reposição** — não há segunda chamada |
 
 ## 12. Níveis de IA (referência de partida)
@@ -161,9 +161,9 @@ Aplicada logo após a última prova; **cumulativa** (cobre as três unidades); *
 - **Atividades de aula:** conforme o objetivo do encontro, declarado caso a caso.
 - **Trabalho maior:** IA como colaboradora permitida, com o aluno responsável por verificar, testar, corrigir e defender.
 
-## 13. Calendário — 21 quintas: 16 encontros, 3 noites de trabalho e 2 reservas
+## 13. Calendário — 21 quintas: 15 encontros, 3 noites de trabalho, 2 sem aula e 1 reserva
 
-Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. O semestre tem **21 quintas**: os 16 encontros, 3 noites de trabalho remoto e **2 datas de reserva** (10/12 e 17/12) para reposição, plantão ou atividade complementar. Além dos 16 encontros, há **3 noites de trabalho remoto** (27/08, 08/10 e 19/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
+Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. O semestre tem **21 quintas**: os 15 encontros, 3 noites de trabalho remoto, as quintas sem aula de **10/09** e **01/10** e **1 data de reserva** (17/12) para reposição, plantão ou atividade complementar. Além dos 15 encontros, há **3 noites de trabalho remoto** (27/08, 15/10 e 26/11), uma por bloco, sempre na quinta que antecede a entrega: os grupos trabalham no projeto à distância, com o professor disponível online, e a evidência é o próprio repositório.
 
 | Enc. | Unidade | Foco do encontro | IA |
 |:--:|:--|:--|:--|
@@ -174,14 +174,13 @@ Datas de 2026.2 (quintas-feiras) em `calendario-2026-2.md`. O semestre tem **21 
 | **5** | **Análise** | **PROVA 1 + entrega do Trabalho 1 (análise + walking skeleton)** | **Sem IA** |
 | 6 | Projeto | Do problema à solução: decisões de projeto · fluxo de Pull Request | Consulta |
 | 7 | Projeto | Modelagem e diagramas | Colaboradora |
-| 8 | Projeto | Decisões arquiteturais (ADR) e alternativas | Consulta |
-| 9 | Projeto | Não-funcionais e validação · evoluir o incremento + **Retrospectiva 2** | Consulta |
-| **10** | **Projeto** | **PROVA 2 + entrega do Trabalho 2 (projeto + incremento via PR)** | **Sem IA** |
-| 11 | Construção | Da decisão ao código: construção incremental | Colaboradora |
-| 12 | Construção | Testes a partir dos critérios de aceite | Colaboradora |
-| 13 | Construção | Revisão de código e **refatoração** | Consulta |
-| 14 | Construção | Integração, validação e evidência · **Retrospectiva 3** | Colaboradora |
-| **15** | **Construção** | **PROVA 3 + entrega do Trabalho 3 (produto evoluído + refatoração)** | **Sem IA** |
-| **16** | — | **PROVA SUBSTITUTIVA (cumulativa) + fechamento** | **Sem IA** |
+| 8 | Projeto | Decisões arquiteturais (ADR), não-funcionais e validação do projeto · evoluir o incremento + **Retrospectiva 2** | Consulta |
+| **9** | **Projeto** | **PROVA 2 + entrega do Trabalho 2 (projeto + incremento via PR)** | **Sem IA** |
+| 10 | Construção | Da decisão ao código: construção incremental | Colaboradora |
+| 11 | Construção | Testes a partir dos critérios de aceite | Colaboradora |
+| 12 | Construção | Revisão de código e **refatoração** | Consulta |
+| 13 | Construção | Integração, validação e evidência · **Retrospectiva 3** | Colaboradora |
+| **14** | **Construção** | **PROVA 3 + entrega do Trabalho 3 (produto evoluído + refatoração)** | **Sem IA** |
+| **15** | — | **PROVA SUBSTITUTIVA (cumulativa) + fechamento** | **Sem IA** |
 
 O detalhamento de cada encontro (pontos, produção contínua do produto e trabalhos de sala) está no Documento 3.

@@ -1,6 +1,6 @@
 # Estrutura padrão dos slides
 
-Um deck por encontro de conteúdo (12 decks: aulas 1–4, 6–9, 11–14). As aulas de prova (5, 10, 15) e a substitutiva (16) não têm deck.
+Um deck por encontro de conteúdo (11 decks: aulas 1–4, 6–8, 10–13). As aulas de prova (5, 9, 14) e a substitutiva (15) não têm deck.
 
 O deck **não é o material de estudo** — é o apoio da exposição de ~70 min. Ele existe para sustentar o ciclo de cada conceito (exemplo → contraponto → aplicação) e depois **sair do caminho**, porque mais de 2 horas da aula são de produção.
 
@@ -20,9 +20,9 @@ O deck **não é o material de estudo** — é o apoio da exposição de ~70 min
 | 15 | **Nível de IA nesta aula** | Sem IA / consulta / colaboradora — e o que registrar | 1 min |
 | 16 | **Sua consulta** | 1 pergunta-guia: "o que desta aula você levaria para a prova?" | 1 min |
 
-Nas aulas **11 a 14** o slide 13–14 é substituído por um único **Produção em sala**, com a lista da produção e a entrega do encontro em destaque — a Unidade 3 não tem menu de opções.
+Nas aulas **10 a 13** o slide 13–14 é substituído por um único **Produção em sala**, com a lista da produção e a entrega do encontro em destaque — a Unidade 3 não tem menu de opções.
 
-Nas aulas 4, 9 e 14 entra um slide extra de **Retrospectiva** (antes do 14), com as quatro perguntas e a autoavaliação por pares.
+Nas aulas 4, 8 e 13 entra um slide extra de **Retrospectiva** (antes do 14), com as quatro perguntas e a autoavaliação por pares.
 
 ## Anatomia de um bloco de conteúdo
 
@@ -42,7 +42,7 @@ O contraponto é obrigatório (instruções gerais da disciplina): é ele que tr
 - **Nada de material de consulta pronto:** o deck não pode virar um resumo que substitui a consulta autoconstruída pelo aluno.
 - Fonte grande (títulos 36pt+, corpo 18–24pt) — sala noturna, projeção ao fundo.
 
-## Mapa dos 12 decks
+## Mapa dos 11 decks
 
 | Aula | Deck | Blocos de conteúdo (2 a 4 por aula) |
 |:--:|---|---|
@@ -52,12 +52,11 @@ O contraponto é obrigatório (instruções gerais da disciplina): é ele que tr
 | 4 | Critérios de aceite, hipóteses e riscos | Dado/Quando/Então · Critério ≠ teste · Hipótese × suposição · Risco e mitigação |
 | 6 | Decisões de projeto e fluxo de PR | Decisão × implementação · Trade-off · Da análise à decisão · Fluxo de Pull Request |
 | 7 | Modelagem e diagramas | Para que serve um diagrama · Contexto/componentes/dados · "O suficiente" |
-| 8 | ADR e alternativas | Anatomia do ADR · Consequências · Quando virar ADR · Revisitar decisão |
-| 9 | Não-funcionais e validação | Os quatro não-funcionais · Efeito no design · Critérios de validação |
-| 11 | Construção incremental | Fatiar incrementos · Definição de pronto · Commit e rastreabilidade · IA gerando código |
-| 12 | Testes a partir dos critérios | Do critério ao teste · Tipos de teste · Casos limite · Cobertura real × aparente |
-| 13 | Revisão de código e refatoração | Objetivo do review · Cheiros de código · Refatorar com segurança · Reuso |
-| 14 | Integração, validação e evidência | Integrar sem quebrar · Evidência de execução · Validar contra a análise |
+| 8 | ADR, não-funcionais e validação do projeto | O ADR guarda o porquê · Quando virar ADR e o caso da migração · Revisitar a decisão · Não-funcional como cenário · Validar o projeto |
+| 10 | Construção incremental | Fatiar incrementos · Definição de pronto · Commit e rastreabilidade · IA gerando código |
+| 11 | Testes a partir dos critérios | Do critério ao teste · Tipos de teste · Casos limite · Cobertura real × aparente |
+| 12 | Revisão de código e refatoração | Refatorar sem mudar o comportamento · O contrato do `db.js` e onde vaza · Revisão de código · Cheiros, reuso e o que pagar primeiro |
+| 13 | Integração, validação e evidência | Integrar sem quebrar · Evidência e demo · Validar contra a análise · Fechar a iteração: retrospectiva e quem sabe o quê |
 
 ## Exemplo concreto — deck da Aula 1
 

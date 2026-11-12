@@ -14,9 +14,13 @@
 - Fluxo de Pull Request: branch, revisão por par, merge com CI verde.
 
 ## Produção contínua (todos os grupos)
+- Ligar a **proteção da branch `main`**: sem commit direto, sem apagar a branch, merge só por PR aprovado e com CI verde.
+- Registrar a evidência da configuração em `docs/evidencias/protecao-main.md` — print da regra e a mensagem do push recusado —, entregue pelo **primeiro PR** do grupo.
 - Passar a integrar toda mudança relevante do produto por PR revisado por outro integrante.
+- Registrar as 3 decisões em `docs/projeto.md`, cada uma ligada a um requisito ou risco da Unidade 1.
 
-## Trabalhos em sala (em grupo — fazer as três)
+## Trabalhos em sala (em grupo — fazer as quatro)
 1. Listar 3 decisões que o caso exige e, para cada uma, 2 alternativas viáveis.
 2. Montar uma tabela de trade-offs (critérios × alternativas) para uma das decisões.
 3. Ligar cada decisão a um requisito ou risco da unidade de Análise que a justifica.
+4. Ligar a proteção da branch `main` e registrar a evidência em `docs/evidencias/protecao-main.md` (print da regra + mensagem do push recusado), entregue pelo **primeiro PR** do grupo.
